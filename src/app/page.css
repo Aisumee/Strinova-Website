@@ -32,9 +32,62 @@ main section {
 .wallpaper-container {
     overflow: hidden;
 }
-
 .wallpaper {
-    width: 100vw;
+    width: 100%;
+    height: 25cm;
+    background-image: url("/public/bg/Strinova\ wallpaper\ main.webp");
+    position: relative;
+    
+}
+.title {
+    position: absolute;
+    bottom: 7cm;
+    text-align: center;
+    font-size: 200px;
+    text-shadow: 3px 3px  #80a4d4, 3px -3px 0 #80a4d4, -3px 3px 0 #80a4d4,
+    -3px -4px 0 #80a4d4;
+    color: white;
+    font-family: Bahnschrift Condensed;
+    left: 16cm;
+}
+.Subtitle{
+    position: absolute;
+    bottom: 6.8cm;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px  #80a4d4, 3px -3px 0 #80a4d4, -3px 3px 0 #80a4d4,
+    -3px -4px 0 #80a4d4;
+    color: white;
+    font-family: Bahnschrift Condensed;
+    left: 21.6cm;
+}
+.Download {
+    width: fit-content;
+    position: absolute;
+    background-color: #80a4d4;
+    color: white;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    left: 24.5cm;
+    bottom: 100px;
+}
+.Download:hover {
+    color: #80a4d4;
+    background-color: white;
+    transition: color 0.6s ease;
+}
+.wallpaper2 {
+    height: 15cm;
+    width: 100%;
+    background-image: url("/public/bg/Strinova\ Background\ 2.jpg");
+    position: relative;
+bottom: 50px;
+}
+
+.wallpaper2-container {
+    overflow: hidden;
 }
 
 .agents-container {
