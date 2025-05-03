@@ -5,13 +5,6 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    margin: 0;
-    font-size: 3rem;
-    color: #3d2e40;
-    text-align: center;
-}
-
 h3 {
     margin: 0;
     font-size: 2rem;
@@ -59,7 +52,7 @@ main section {
     -3px -4px 0 #80a4d4;
     color: white;
     font-family: Bahnschrift Condensed;
-    left: 21.6cm;
+    left: 20.6cm;
 }
 .Download {
     width: fit-content;
@@ -70,7 +63,7 @@ main section {
     border-radius: 10px;
     text-decoration: none;
     font-size: 1.2rem;
-    left: 24.5cm;
+    left: 23.5cm;
     bottom: 100px;
 }
 .Download:hover {
@@ -83,13 +76,42 @@ main section {
     width: 100%;
     background-image: url("/public/bg/Strinova\ Background\ 2.jpg");
     position: relative;
-bottom: 50px;
+    bottom:50px;
+}
+.kanami-emoji{
+    position: relative;
+    top: -7cm;
+    left: 25cm;
+
 }
 
 .wallpaper2-container {
     overflow: hidden;
 }
-
+.about-title {
+    top: -22cm;
+    position: absolute;
+    text-align: center;
+    left: 17.15cm;
+    font-size: 3.2rem;
+    color:  #1A1B20;
+}
+.about-text{
+    top: -17cm;
+    position: absolute;
+    text-align: center;
+    left: 3cm;
+    font-size: 1.2rem;
+    color:  #1A1B20;
+}
+/*work on this later */
+.wallpaper3 {
+    background-image: url("/public/bg/2023\ Spring\ Festival.png");
+    position: relative;
+}
+.wallpaper3-container {
+    overflow: hidden;
+}
 .agents-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -111,4 +133,42 @@ bottom: 50px;
 
 .view-more:hover {
     filter: invert(1);
+}
+.card {
+    background-color: var(--color-base-200);
+    border-radius: var(--radius-box);
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    background-color: var(--color-base-100);
+}
+
+.card h2,
+.card-alt h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--color-primary-content);
+}
+
+.card p,
+.card-alt p {
+    font-size: 1.2rem;
+    color: var(--color-primary-content);
+}
+
+.card-alt {
+    background-color: var(--color-base-100);
+    border-radius: var(--radius-box);
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    color: white;
+    text-align: center;
 }
