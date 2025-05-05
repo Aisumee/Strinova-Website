@@ -70,13 +70,32 @@ body {
     z-index: 999;
     height: 38px;
 }
-.subtopicbar {
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .main a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Bahnschrift Condensed;
+}
+
+.navbar .sub {
     display: flex;
     flex-direction: row;
     gap: 8rem;
     top: 0;
 }
-.subtopicbar a {
+
+.navbar .sub a {
     font-size: 1.0rem;
     font-family: Bahnschrift Condensed;
     text-decoration: none;
@@ -85,21 +104,7 @@ body {
     border-radius: 0.5rem;
     transition: color 0.3s ease;
     display: flex;
-    
-}
 
-.strinovabar a {
-    font-size: 3rem;
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 70px;
-    font-family: Bahnschrift Condensed;
-
-}
-
-
-.navbar a:hover {
-    color: white;
 }
 
 main {
