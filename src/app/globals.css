@@ -107,17 +107,6 @@ body {
 
 }
 
-main {
-    --gap: 3rem;
-    position: relative;
-    max-width: 85rem;
-    margin: var(--gap) auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    margin-bottom: 3rem;
-}
-
 footer {
     display: flex;
     flex-direction: row;
@@ -127,4 +116,12 @@ footer {
     padding: 2rem;
     background-color: var(--color-base-200);
     color: var(--color-base-content);
+}
+
+.m-auto {
+    margin: 0 auto 0 auto;
+}
+
+.max-w-7xl {
+    max-width: 80rem;
 }
