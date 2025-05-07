@@ -1,5 +1,5 @@
 /* The two selectors below are separated with a comma The element is a type selector, the class is a class selector*/
-p, .editor-note {
+p, p .editor-note {
     color: red;
     width: 500px;
     border: 10px solid black;
@@ -17,6 +17,7 @@ h1 {
     padding: 20px 0;
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px 1px aqua;
+
 }
 p, li {
     font-size: 16px;
@@ -47,7 +48,7 @@ p {
     background: midnightblue;
 }
 /*When em is nested in li, it will be this color*/
-.li em {
+li em {
     color: rgb(102, 17, 17);
 }
 /*Any time p is directly after h1, it will be larger*/
@@ -72,5 +73,16 @@ h1 + p{
     transform: rotate(0.8turn);
 }
 h1 {
-    background-image: url();
+    background-image: url("/public/emojis/Kanami\ Emoji.webp");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.editor-note {
+    color: green;
+    border: 5px dashed red;
+}
+/* * is the universal selector, the selects eveything on the page*/
+* {
+    margin: 0;
 }
