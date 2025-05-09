@@ -86,3 +86,9 @@ div.editor-note {
 * {
     margin: 0;
 }
+ul > li {
+    border-top: 5px solid red;
+}
+.nav-bar {
+    display: flex;
+}

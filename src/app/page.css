@@ -126,9 +126,24 @@ main section {
 }
 
 /*work on this later */
-.wallpaper3 {
-    background-image: url("/public/bg/2023\ Spring\ Festival.png");
-    position: relative;
+.lore-wallpaper {
+    background-image: url("/public/bg/Season_4_wallpaper.webp");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #1A1B20;
+}
+
+.lore-title {
+    font-size: 5rem;
+    color: white;
+    margin-left:100rem;
+}
+
+.lore-text {
+    color: white;
 }
 
 .wallpaper3-container {
