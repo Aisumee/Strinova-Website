@@ -1,0 +1,100 @@
+{
+  "tdm": [
+    {
+      "name": "WindyTown",
+      "image": "windy-town/Windy-Town.jpg",
+      "layout": "windy-town/Windy-Town-Layout.jpg"
+    },
+    {
+      "name": "Spacelabs",
+      "image": "space-lab/Space-Lab.jpg",
+      "layout": "space-lab/Space-Lab-Layout.jpg"
+    },
+    {
+      "name": "Cosmite",
+      "image": "cosmite/Cosmite.jpg",
+      "layout": "cosmite/Cosmite-Layout.jpg"
+    },
+    {
+      "name": "Area 88",
+      "image": "area-88/Area-88.jpg",
+      "layout": "area-88/Area-88-Layout.jpg"
+    },
+    {
+      "name": "Base 404",
+      "image": "base-404/Base-404.jpg",
+      "layout": "base-404/Base-404-Layout.jpg"
+    },
+    {
+      "name": "Cauchy District",
+      "image": "cauchy-district/Cauchy-District.jpg",
+      "layout": "cauchy-district/Cauchy-District-Layout.jpg"
+    },
+    {
+      "name": "Port",
+      "image": "port-eular/Port-Eular.jpg",
+      "layout": "port-eular/Port-Eular-Layout.jpg"
+    }
+  ],
+  "teamArena": [
+    {
+      "name": "Blossom Archery Dojo",
+      "image": "blossom-archery-dojo/BLOSSOM-ARCHERY-DOJO.jpg",
+      "layout": "blossom-archery-dojo/BLOSSOM-ARCHERY-DOJO-layout.jpg"
+    },
+    {
+      "name": "Pier Town",
+      "image": "pier-town/PIER-TOWN.jpg",
+      "layout": "pier-town/PIER-TOWN-layout.jpg"
+    },
+    {
+      "name": "Underwater PowerPlant",
+      "image": "underwater-power-plant/UNDERWATER-POWER-PLANT.jpg",
+      "layout": "underwater-power-plant/UNDERWATER POWER-PLANT-layout.jpg"
+    },
+    {
+      "name": "District Aracdia",
+      "image": "district-arcadia/DISTRICT-ARCADIA.jpg",
+      "layout": "district-arcadia/DISTRICT-ARCADIA-Layout.jpg"
+    },
+    {
+      "name": "NO.2 Depot",
+      "image": "no-2-depot/NO.2-Depot.jpg",
+      "layout": "no-2-depot/NO.2-Depot-Layout.jpg"
+    }
+  ],
+  "escort": [
+    {
+      "name": "Departure Zone",
+      "image": "departure-zone/DEPARTURE-ZONE.jpg",
+      "layout": "departure-zone/DEPARTURE-ZONE-Layout.jpg"
+    },
+    {
+      "name": "SnowVeil",
+      "image": "snowveil-district/SNOWVEIL-DISTRICT.jpg",
+      "layout": "snowveil-district/SNOWVEIL-DISTRICT-Layout.jpg"
+    },
+    {
+      "name": "Jaksaa",
+      "image": "jaksaa-factory/JAKSAA-FACTORY.jpg",
+      "layout": "jaksaa-factory/JAKSAA-FACTORY-Layout.jpg"
+    }
+  ],
+  "outbreak": [
+    {
+      "name": "Polar Research Institute",
+      "image": "polar-research-institute/Polar-Research-Institute.jpg",
+      "layout": "polar-research-institute/Polar-Research-Institute-Layout.jpg"
+    },
+    {
+      "name": "Ghannak",
+      "image": "ghannak/Ghannak.jpg",
+      "layout": "ghannak/Ghannak-Layout.jpg"
+    },
+    {
+      "name": "Loch District",
+      "image": "loch-district/Loch-District.jpg",
+      "layout": "loch-district/Loch-District-Layout.jpg"
+    }
+  ]
+}

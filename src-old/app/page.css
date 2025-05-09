@@ -41,27 +41,13 @@ main section {
     overflow: hidden;
 }
 
-.wallpaper-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    display: block;
-    background: radial-gradient(circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    mix-blend-mode: overlay;
-    pointer-events: none;
-    border-radius: 10px;
-}
-
 .wallpaper {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/bg/Strinova-wallpaper-main.webp");
+    background-image: url("/public/bg/Strinova wallpaper main.webp");
     background-size: cover;
     background-position: center;
 }
@@ -118,7 +104,7 @@ main section {
 }
 
 .about-infomation {
-    background-image: url("/bg/Strinova-Background-2.jpg");
+    background-image: url("/public/bg/Strinova Background 2.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +127,7 @@ main section {
 
 /*work on this later */
 .lore-wallpaper {
-    background-image: url("/bg/Season_4_wallpaper.webp");
+    background-image: url("/public/bg/Season_4_wallpaper.webp");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,7 +139,7 @@ main section {
 .lore-title {
     font-size: 5rem;
     color: white;
-    margin-left: 100rem;
+    margin-left:100rem;
 }
 
 .lore-text {
