@@ -98,9 +98,9 @@ main section {
 
 .kanami-emoji {
     position: relative;
-    top: -7cm;
-    left: 25cm;
-
+    top: 2cm;
+    left: 18.5cm;
+    width: 20.2rem;
 }
 
 .about-infomation {
@@ -118,32 +118,18 @@ main section {
 }
 
 .about-title {
-    font-size: 3.2rem;
+    font-size: 6.2rem;
 }
 
 .about-text {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
+
 
 /*work on this later */
-.lore-wallpaper {
-    background-image: url("/public/bg/Season_4_wallpaper.webp");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    color: #1A1B20;
-}
-
-.lore-title {
-    font-size: 5rem;
-    color: white;
-    margin-left:100rem;
-}
-
-.lore-text {
-    color: white;
+.wallpaper3 {
+    background-image: url("/public/bg/2023\ Spring\ Festival.png");
+    position: relative;
 }
 
 .wallpaper3-container {
