@@ -76,19 +76,23 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0.4rem 1rem;
+    border-right: white;
 }
 
 .navbar .main a {
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-decoration: none;
     color: #ffffff;
     font-family: Bahnschrift Condensed;
+    border-right: 2px white solid; 
+    padding-right: 2rem;
 }
 
 .navbar .sub {
     display: flex;
     flex-direction: row;
-    gap: 8rem;
+    gap: 7rem;
     top: 0;
 }
 
@@ -96,8 +100,8 @@ body {
     font-size: 1.4rem;
     font-family: Bahnschrift Condensed;
     text-decoration: none;
-    color: #929294;
-    padding: 0.4rem 1rem;
+    color: #b6b6b6;
+    padding: 0.3rem 1rem;
     border-radius: 0.5rem;
     transition: color 0.3s ease;
     display: flex;

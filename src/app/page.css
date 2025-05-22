@@ -58,8 +58,8 @@ main section {
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    background-color: #1A1B20;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) rgb(0, 0, 0));
+    background-color: #000000;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) rgb(0, 0, 0));
 }
 
 .wallpaper-items {
@@ -94,7 +94,7 @@ main section {
     width: fit-content;
     background-color: #80a4d4;
     color: white;
-    padding: 2rem 2rem;
+    padding: 1.7rem 2rem;
     border-radius: 10px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -137,7 +137,8 @@ main section {
 
 .about-text {
     font-size: 1rem;
-    margin-block-end: 1px;
+    right: 50rem;
+    padding-left: 6rem;
 }
 
 
@@ -148,6 +149,10 @@ main section {
     gap: 1rem;
 }
 
+.lore-text {
+    margin-left: 20rem;
+    padding-right: 5rem;
+}
 
 .title {
     display: flex;
@@ -168,20 +173,8 @@ main section {
     font-size: 4.2rem;
     margin-right: 7rem;
     left: 28rem;
-    bottom: 4.5rem;
+    bottom: 4.8rem;
 }
-
-/*.lore-infomation {
-    background-image: url("/public/bg/Season_4_wallpaper.webp");
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    min-height: 100vh;
-    margin-top: 45rem;
-}*/
 
 .agents-container{
     position: relative;
