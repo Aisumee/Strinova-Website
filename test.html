@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Main Page StyleSheet.css" >
-  </head>
-  <body>
-    <h1>Click the image</h1>
-    <img id="changeimage" src="/public/bg/2023 Spring Festival.png">
-    <p id="changetext"> Text changes when image is clicked</p>
-    <script src="javascript-test.js"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gallery</title>
+    <link rel="stylesheet" href="Main Page StyleSheet.css">
+</head>
+<div class="agent-so-pro">
+    <div class="gallery-container">
+              <div class="content-area">
+            <h1 id="gallery-title">PUS</h1>
+            <p id="gallery-description">The official government of the new world, maintaining order while striving to find a cure for Collapse Syndrome</p>
+        </div>
+        <div class="image-row">
+                <img src="public/bg/pus-icon-removebg-preview.png" alt="Gallery Image 1" data-set="1" class="gallery-image">
+                <img src="public/bg/scissors-icon-unclcikedremovebg-preview.png" alt="Gallery Image 2" data-set="2" class="gallery-image">
+                <img src="public/bg/urbino-symbol-unclicked-removebg-preview.png" alt="Gallery Image 3" data-set="3" class="gallery-image">
+        </div>
+    </div>
 
+    <script src="javascript-test.js"></script>
+</body>
+</html>

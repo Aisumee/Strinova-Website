@@ -1,5 +1,64 @@
-img {
-    max-width: 200px;
-    width: 200px;
+.agent-so-pro {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(public/bg/PUS_Wallpaper.jpg);
+    transition: background-image 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.gallery-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    top: 50rem;
+    position: absolute;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.image-box {
+    flex: 1;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.03);
+}
+
+.gallery-image {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-area {
+    text-align: right;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: auto;
+}
+
+#gallery-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#gallery-description {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
