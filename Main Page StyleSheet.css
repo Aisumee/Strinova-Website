@@ -1,22 +1,28 @@
-.agent-so-pro {
+body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    transition: background-image 0.5s ease;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
 }
 
 .gallery-container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    top: 50rem;
+    font-family: Arial, sans-serif;
+    transition: background-image 0.5s ease;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.gallery {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+    text-align: right;
+    padding: 20px;
+    max-width: 50%;
+    margin-left: auto;
 }
 
 .image-row {
@@ -40,13 +46,6 @@
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.content-area {
-    text-align: right;
-    padding: 20px;
-    max-width: 50%;
-    margin-left: auto;
 }
 
 #gallery-title {
