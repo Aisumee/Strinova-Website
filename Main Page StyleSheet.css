@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    background-image: url(public/bg/PUS_Wallpaper.jpg);
     transition: background-image 0.5s ease;
     background-size: cover;
     background-position: center;
