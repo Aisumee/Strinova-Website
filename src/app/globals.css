@@ -118,9 +118,11 @@ footer {
     justify-content: space-between;
     margin-top: auto;
     gap: 1rem;
-    padding: 2rem;
-    background-color: var(--color-base-200);
+    padding: .5rem;
+    background-color: #1A1B20;
     color: var(--color-base-content);
+    position: relative;
+    bottom: -39rem;;
 }
 
 .m-auto {

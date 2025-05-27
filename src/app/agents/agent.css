@@ -1,0 +1,13 @@
+body {
+    overflow-x: hidden;
+}
+.agent {
+    position: relative;
+}
+.background-top {
+    background-image: url(/public/bg/Wallpaper_深空开拓.webp);
+    background-size: 95.2rem;
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+}
