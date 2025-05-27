@@ -121,7 +121,6 @@ main section {
     min-height: 100vh;
     text-align: center;
     color: #1A1B20;
-    flex-direction: column;
     justify-content: center;
     font-family: Bahnschrift Condensed;
 }
@@ -202,6 +201,7 @@ main section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease;
+    width: 125px;
 }
 
 .image-row img:hover {
