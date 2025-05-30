@@ -3,9 +3,14 @@ body {
     background-color: black;
 }
 
-.agents {
-    position: absolute
-
+.characters-wrapper {
+    position: relative;
+    padding: 0 6rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: Bahnschrift Condensed;
 }
 
 .background-top {
@@ -16,7 +21,7 @@ body {
     background-position: center;
     width: 100%;
     height: 50rem;
-    position: relative;
+    position: absolute;
 }
 
 
@@ -29,24 +34,22 @@ body {
 
 .titles {
     color: white;
-    padding-left: 40px;
-    font-family: Bahnschrift Condensed;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border-bottom: white solid;
+    width: fit-content;
+}
+
+.titles h1 {
+    margin: 0;
 }
 
 .kanami-emoji {
     width: 70px;
     height: 70px;
-    position: absolute;
-    left: 210px;
-    top: 180px;
     transform: rotate(15deg);
-}
-
-.agent2 {
-    margin-top: 200px;
-    border-bottom: white solid;
-    margin-right: 70rem;
 }
 
 .subtitles {
@@ -55,46 +58,46 @@ body {
     gap: 5rem;
     font-size: 1.6rem;
     color: #939397;
-    margin-top: -30px;
     font-weight: 1000;
-    height: 100px;
 }
 
-.all-agents {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 20rem));
-    padding-left: 130px;
-}
-
-.senitnel:hover, .vanguard:hover, .support:hover, .controller:hover, .duelist:hover, .all:hover {
-    color: white;
+.subtitles p {
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: color 0.5s ease;
 }
 
-footer {
-    top: 90rem;
+.subtitles p:hover {
+    color: white;
 }
 
-/** things i might need for java at the bottom**/
+.subtitles p.active {
+    color: #ff6b2f;
+}
 
-
+.characters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4rem;
+}
 
 #headshot {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    width: 230px;
-    margin-right: 400px;
-    padding-top: 20px;
+    overflow: hidden;
 }
 
-#headshot img {
-    width: 15rem;
+#headshot:hover {
+    p {
+        background-color: #ff6b2f;
+        color: white;
+    }
+
+    img {
+        transform: scale(1.05);
+    }
 }
 
 #headshot a {
     text-decoration: none;
+    width: 100%;
 }
 
 #headshot p {
@@ -107,11 +110,16 @@ footer {
     padding-top: 10px;
     font-size: 1.3rem;
     text-decoration: none;
-    width: 230px;
     font-weight: 1000;
-    border-radius: 0px 0px 2px 2px ;
+    border-radius: 0px 0px 2px 2px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
 }
 
-#headshot:hover {
-    size: 200rem;
+#headshot img {
+    position: relative;
+    z-index: 0;
+    transition: transform 0.3s ease;
+    width: 100%;
 }

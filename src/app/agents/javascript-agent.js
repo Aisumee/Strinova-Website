@@ -1,63 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() { 
+const filters = document.getElementsByClassName("subtitles")[0].children;
+const characters = document.getElementsByClassName("characters")[0].children;
 
-    const roleTitles = document.querySelectorAll('.role-title'); 
+function showCharacters(role) {
+  Array.from(characters).forEach((character) => {
+    if (role === "all") {
+      character.style.display = "block";
+    } else {
+      character.style.display = character.getAttribute("data-role") === role ? "block" : "none";
+    }
+  });
+}
 
-    const characters = document.querySelectorAll('.character'); 
+for (let i = 0; i < filters.length; i++) {
+  filters[i].addEventListener("click", function () {
+    for (let j = 0; j < filters.length; j++) {
+      filters[j].classList.remove("active");
+    }
 
- 
+    this.classList.add("active");
+    const role = this.getAttribute("data-role");
+    showCharacters(role);
+  });
+}
 
-    // Show all characters by default 
-
-    showCharacters('all'); 
-
- 
-
-    // Add click event listeners to role titles 
-
-    roleTitles.forEach(titles => { 
-
-        titles.addEventListener('click', function() { 
-
-            // Remove active class from all titles 
-
-            roleTitles.forEach(t => t.classList.remove('active')); 
-
-            // Add active class to clicked title 
-
-            this.classList.add('active'); 
-
-            // Get the role from data attribute 
-
-            const role = this.getAttribute('data-role'); 
-
-            // Show characters for selected role 
-
-            showCharacters(role); 
-
-        }); 
-
-    }); 
-
- 
-
-    function showCharacters(role) { 
-
-        characters.forEach(character => { 
-
-            if (role === 'all') { 
-
-                character.style.display = 'block'; 
-
-            } else { 
-
-                // Only show characters that have the exact role class 
-
-                character.style.display = character.classList.contains(role) ? 'block' : 'none'; 
-
-            } 
-
-        }); 
-
-    } 
-
-}); 
+showCharacters("all");
