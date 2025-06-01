@@ -40,6 +40,8 @@ body {
     gap: 1rem;
     border-bottom: white solid;
     width: fit-content;
+    position: relative;
+    top: 50px;
 }
 
 .titles h1 {
@@ -47,8 +49,8 @@ body {
 }
 
 .kanami-emoji {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     transform: rotate(15deg);
 }
 
@@ -71,7 +73,7 @@ body {
 }
 
 .subtitles p.active {
-    color: #ff6b2f;
+    color: #80a4d4;
 }
 
 .characters {
@@ -86,7 +88,7 @@ body {
 
 #headshot:hover {
     p {
-        background-color: #ff6b2f;
+        background-color: #80a4d4;
         color: white;
     }
 

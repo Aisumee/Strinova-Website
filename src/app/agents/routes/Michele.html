@@ -18,107 +18,136 @@
     </nav>
     <div id="michele">
       <img src="/public/agents/michele/Michele.webp" alt="Michele" width="400" />
-      <h1>Michele</h1>
-      <h3>Role: Senitinel</h3>
-      <div id="about">
-        <h2>Background</h2>
-        <p>
-          Michele is a rookie P.U.S investigator in the world of strinova. She is a gamer that applies her gaming to her
-          job as a investigtor. Michele is guided by her seniors Kokona and Nobunaga. Michele loves cat and uses cat
-          robots to fight the enemies, these are also known as Pawtector and Mighty Meow. She wishes to become a admired
-          hero like her father who under unknown circumstances has fallen for collpase syndrome.
-        </p>
-       </div>
-    </div>
-    <hr />
-    <div id="Michele-Skills">
-      <h2>Skills</h2>
-      <div id="Michele-ActiveSkill">
-        <h3>Active Skill: Pawtector</h3>
-        <img src="/public/agents/michele/Michele active skill.webp" alt="Michele ActiveSkill" />
-        <p>Type: damage</p>
-        <p>
-          Michele depolys a Pawtector that can stick to any surfaces from a certain range. The Pawtector will
-          automatically attack the enemy once they get into the range of the pawtector. The Pawtector will deactive once
-          michele reaches a certain range away from it.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Amount: 2/3 with upgrades</li>
-          <li>Cooldown: 40</li>
-          <li>Cooldown starts when a pawtector is destroyed or when all is placed</li>
-          <li>Hp: 45</li>
-          <li>Attack Range: 8</li>
-          <li>Summon Range: 25 meters</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/michele/Michele Active Vid.mp4" />
-        </video>
+      <div class="title">
+        <h1>Michele</h1>
+        <div class="active">
+          <p data-role="about">ABOUT</p>
+          <p data-role="skills">SKILLS</p>
+          <p data-role="weapons">WEAPONS</p>
+          <p data-role="upgrades">UPGRADES</p>
+        </div>
       </div>
-      <div id="Michele-PassiveSkill">
-        <h3>Passive Skill: Kitty Tracer</h3>
-        <img src="/public/agents/michele/Michele passive.webp" alt="Michele PassiveSkill" />
-        <p>Type: detect</p>
-        <p>Allows her to see enemies that hits her with any weapon</p>
-        <h4>Details</h4>
-        <ul>
-          <li>The detectation only lasts for 2 minutes and can only be seen by Michele.</li>
-        </ul>
-        <h4>How To Play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/michele/Michele Passive Vid.mp4" />
-        </video>
+      <div class="main-information">
+        <div class="about-information" data-role="about">
+          <h3>Role: Senitinel</h3>
+          <p>
+            Michele is a rookie P.U.S investigator in the world of strinova. She is a gamer that applies her gaming to her
+            job as a investigtor. Michele is guided by her seniors Kokona and Nobunaga. Michele loves cat and uses cat
+            robots to fight the enemies, these are also known as Pawtector and Mighty Meow. She wishes to become a admired
+            hero like her father who under unknown circumstances has fallen for collpase syndrome.
+          </p>
+        </div>
+        <div id="Michele-Skills">
+          <div class="skill-images" data-role="skills">
+            <img src="/public/agents/michele/Michele active skill.webp" alt="Michele ActiveSkill" />
+            <img src="/public/agents/michele/Michele passive.webp" alt="Michele PassiveSkill" />
+            <img src="/public/agents/michele/Michele Ultimate Skill.webp" alt="Michele UltimateSkill" />
+          </div>
+          <div class="skill-title">
+            <p data-role="about-skill">ABOUT</p>
+            <p data-role="deatils">DETAILS</p>
+            <p data-role="video">VIDEO</p>
+          </div>
+
+          <div id="active-skill">
+            <div class="active-about" data-role="about">
+              <h3>Pawtector</h3>
+              <p>Type: damage</p>
+              <p>
+                Michele depolys a Pawtector that can stick to any surfaces from a certain range. The Pawtector will
+                automatically attack the enemy once they get into the range of the pawtector. The Pawtector will deactive once
+                michele reaches a certain range away from it.
+              </p>
+            </div>
+          </div>
+         <div class="active-deatils" data-role="details">
+          <h4>Details</h4>
+            <ul>
+              <li>Amount: 2/3 with upgrades</li>
+              <li>Cooldown: 40</li>
+              <li>Cooldown starts when a pawtector is destroyed or when all is placed</li>
+              <li>Hp: 45</li>
+              <li>Attack Range: 8</li>
+              <li>Summon Range: 25 meters</li>
+            </ul>
+         </div>
+         <div class="active-video" data-role="video">
+            <video width="400" controls autoplay loop>
+              <source src="/public/agents/michele/Michele Active Vid.mp4" />
+            </video>
+          </div>
+
+          <div id="passive-skill">
+            <div class="passive-about" data-role="about">
+              <h3>Kitty Tracer</h3>
+              <p>Type: detect</p>
+              <p>Allows her to see enemies that inflicts damagge towards her with any weapon</p>
+            </div>
+            <div class="passive-deatils" data-role="details">
+              <h4>Details</h4>
+              <ul>
+                <li>The detectation only lasts for 2 seconds and can only be seen by Michele.</li>
+              </ul>
+            </div>
+            <div class="passive-video" data-role="video">
+              <video width="400" controls autoplay loop>
+                <source src="/public/agents/michele/Michele Passive Vid.mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div id="ultimate-skll">
+            <div class="ultimate-about" data-role="about">
+              <h3>Mighty MeowBlast</h3>
+              <p>Type: damage</p>
+              <p>Michele throws a powerful turret into the battlefield that auto-attacks nearby enemies</p>
+            </div>
+            <div class="ultimate-deatils" data-role="details">
+              <h4>Details</h4>
+              <ul>
+                <li>It can only attack one enemy at a time</li>
+                <li>Cost: 7 Ultimate Points</li>
+                <li>
+                  Mighty Meowbot attacks in 2 phases. The first phase last around 1.25 seconds and deals 2 damage 15 times.
+                  The second phase involves a 0.1 charge time before doing 45 damage to the enemy
+                </li>
+                <li>
+                  Mighty Meowbot can die in 2 ways. The first way is the moment that it is thrown, there is a 32 second
+                  countdown before it despawns. The second way is if it is destroy by enemy, Meowbot has 750hp.
+                </li>
+                <li>
+                  Mighty Meowbot attack range is its line of sight, which allows it to attack from very far distances with a
+                  maximun range of 50 meters.
+                </li>
+              </ul>
+            </div>
+            <div class="ultimate-video" data-role="video">
+            <video width="400" controls autoplay loop>
+              <source src="/public/agents/michele/Michele Ultimate Vid.mp4" />
+            </video>
+            </div>
+          </div>
+
+          <div class="weapons" data-role="weapon">
+            <h3>Primary Gun: Inspector</h3>
+            <img src="/public/agents/michele/Michele's Gun Inspector.webp" />
+            <p>
+              Michele main gun, Inspector, has a maganize of 30 and damage based on the distance of the enemy is. This gun has
+              a great balance of recoil, spread, and firing rate allowing it to be one of the best weapons in the game.
+            </p>
+          </div>
+
+          <div class="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/shared/Capacity.png" loading="lazy" />
+            <img src="/public/agents/michele/Michele Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/michele/Michele Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
       </div>
-      <div id="Michele-UltimateSkill">
-        <h3>Ultime Skill: Mighty MeowBlast</h3>
-        <img src="/public/agents/michele/Michele Ultimate Skill.webp" alt="Michele UltimateSkill" />
-        <p>Type: damage</p>
-        <p>Michele throws a powerful turret into the battlefield that auto-attacks nearby enemies</p>
-        <h4>Details</h4>
-        <ul>
-          <li>It can only attack one enemy at a time</li>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>
-            Mighty Meowbot attacks in 2 phases. The first phase last around 1.25 seconds and deals 2 damage 15 times.
-            The second phase involves a 0.1 charge time before doing 45 damage to the enemy
-          </li>
-          <li>
-            Mighty Meowbot can die in 2 ways. The first way is the moment that it is thrown, there is a 32 second
-            countdown before it despawns. The second way is if it is destroy by enemy, Meowbot has 750hp.
-          </li>
-          <li>
-            Mighty Meowbot attack range is its line of sight, which allows it to attack from very far distances with a
-            maximun range of 50 meters.
-          </li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/michele/Michele Ultimate Vid.mp4" />
-        </video>
-      </div>
-    </div>
-    <hr />
-    <div id="Michele-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Inspector</h3>
-      <img src="/public/agents/michele/Michele's Gun Inspector.webp" />
-      <p>
-        Michele main gun, Inspector, has a maganize of 30 and damage based on the distance of the enemy is. This gun has
-        a great balance of recoil, spread, and firing rate allowing it to be one of the best weapons in the game.
-      </p>
-    </div>
-    <div id="Michele-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="/public/shared/Capacity.png" loading="lazy" />
-      <img src="/public/agents/michele/Michele Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/michele/Michele Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-  </body>
+    </body>
 </html>
