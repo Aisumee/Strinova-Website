@@ -1,0 +1,33 @@
+.mechanics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 10px;
+    gap: 100px;
+    color: white;
+}
+
+.stringify-title, .tip-title {
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 2px #80a4d4 solid;
+    margin: 10px 200px;
+}
+.stringify, .tips{
+    position: relative;
+    font-weight: 500;
+    font-family: Bahnschrift Condensed;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.gradient-box {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgb(0, 0, 0, 1));
+    position: absolute;
+    width: 100%;
+    height: 50rem;
+}
+body {
+    background-image: url(/public/bg/2023\ Spring\ Festival.png);
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
