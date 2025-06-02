@@ -13,7 +13,7 @@
     margin-right: 300px;
 }
 
-.subtitles {
+.subtitles, .skill-title {
     display: flex;
     flex: row;
     gap: 5rem;

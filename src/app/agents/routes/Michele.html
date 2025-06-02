@@ -17,41 +17,43 @@
         <div><a href="/src/app/mechanics/page.html">MECHANICS</a></div>
       </div>
     </nav>
-    <div id="agent">
-      <img class="symbol" src="/public/bg/pus-symbol.png">
-      <img class="agent-img" src="/public/agents/michele/Michele.webp" alt="Michele" width="400" />
-      <div class="title">
-        <h1>MICHELE</h1>
-        <div class="subtitles">
-          <p class="active" data-role="about">ABOUT</p>
-          <p data-role="skills">SKILLS</p>
-          <p data-role="weapons">WEAPONS</p>
-          <p data-role="upgrades">UPGRADES</p>
+
+    <div class="all">
+      <div id="agent">
+        <img class="symbol" src="/public/bg/pus-symbol.png">
+        <img class="agent-img" src="/public/agents/michele/Michele.webp" alt="Michele" width="400" />
+        <div class="title">
+          <h1>MICHELE</h1>
+          <div class="subtitles">
+            <p class="active" data-role="about">ABOUT</p>
+            <p data-role="skills">SKILLS</p>
+            <p data-role="weapons">WEAPONS</p>
+            <p data-role="upgrades">UPGRADES</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="main">
-      <div  id="about-information" data-role="about">
-        <h3>Role: Senitinel</h3>
-        <p>
-         Michele is a rookie P.U.S investigator in the world of strinova. She is a gamer that applies her gaming to her
-         job as a investigtor. Michele is guided by her seniors Kokona and Nobunaga. Michele loves cat and uses cat
-          robots to fight the enemies, these are also known as Pawtector and Mighty Meow. She wishes to become a admired
-          hero like her father who under unknown circumstances has fallen for collpase syndrome.
-        </p>
-      </div>
-      <div id="skills">
+      <div class="main">
+        <div  id="about-information" data-role="about">
+          <h3>Role: Senitinel</h3>
+          <p>
+           Michele is a rookie P.U.S investigator in the world of strinova. She is a gamer that applies her gaming to her
+          job as a investigtor. Michele is guided by her seniors Kokona and Nobunaga. Michele loves cat and uses cat
+            robots to fight the enemies, these are also known as Pawtector and Mighty Meow. She wishes to become a admired
+            hero like her father who under unknown circumstances has fallen for collpase syndrome.
+          </p>
+        </div>
+       <div id="skills">
         <div class="skill-images" data-role="skills">
           <img src="/public/agents/michele/Michele active skill.webp" data-role="active-skill"  alt="Michele ActiveSkill" />
-          <img src="/public/agents/michele/Michele passive.webp" data-role="passive-skill -skill" alt="Michele PassiveSkill" />
-          <img src="/public/agents/michele/Michele Ultimate Skill.webp" data-role="passive-skill" alt="Michele UltimateSkill" />
-        </div>
+          <img src="/public/agents/michele/Michele passive.webp" data-role="passive-skill" alt="Michele PassiveSkill" />
+          <img src="/public/agents/michele/Michele Ultimate Skill.webp" data-role="ultimate-skill" alt="Michele UltimateSkill" />
+       </div>
         <div class="skill-title">
           <p data-role="about-skill">ABOUT</p>
           <p data-role="deatils">DETAILS</p>
           <p data-role="video">VIDEO</p>
         </div>
-        <div id="active-skill">
+        <div id="active-skill" data-role="active-skill" >
           <div class="active-about" data-role="about-skill">
             <h3>Pawtector</h3>
             <p>Type: damage</p>
@@ -61,24 +63,24 @@
               michele reaches a certain range away from it.
             </p>
             </div>
+          </div>
+        <div class="active-deatils" data-role="details">
+          <h4>Details</h4>
+            <ul>
+              <li>Amount: 2/3 with upgrades</li>
+              <li>Cooldown: 40</li>
+              <li>Cooldown starts when a pawtector is destroyed or when all is placed</li>
+              <li>Hp: 45</li>
+              <li>Attack Range: 8</li>
+              <li>Summon Range: 25 meters</li>
+            </ul>
         </div>
-       <div class="active-deatils" data-role="details">
-        <h4>Details</h4>
-          <ul>
-            <li>Amount: 2/3 with upgrades</li>
-            <li>Cooldown: 40</li>
-            <li>Cooldown starts when a pawtector is destroyed or when all is placed</li>
-            <li>Hp: 45</li>
-            <li>Attack Range: 8</li>
-            <li>Summon Range: 25 meters</li>
-          </ul>
-       </div>
        <div class="active-video" data-role="video">
           <video width="400" controls loop>
             <source src="/public/agents/michele/Michele Active Vid.mp4" />
-            </video>
-        </div>
-        <div id="passive-skill">
+          </video>
+         </div>
+        <div id="passive-skill" data-role="passive-skill" >
           <div id="passive-about" data-role="about-skill">
             <h3>Kitty Tracer</h3>
             <p>Type: detect</p>
@@ -88,7 +90,7 @@
             <h4>Details</h4>
             <ul>
               <li>The detectation only lasts for 2 seconds and can only be seen by Michele.</li>
-            </ul>
+           </ul>
           </div>
           <div id="passive-video" data-role="video">
             <video width="400" controls loop>
@@ -96,7 +98,7 @@
             </video>
           </div>
         </div>
-        <div id="ultimate-skll">
+        <div id="ultimate-skll" data-role="ultimate-skill">
           <div id="ultimate-about" data-role="about-skill">
             <h3>Mighty MeowBlast</h3>
             <p>Type: damage</p>
@@ -110,9 +112,9 @@
               <li>
                 Mighty Meowbot attacks in 2 phases. The first phase last around 1.25 seconds and deals 2 damage 15 times.
                 The second phase involves a 0.1 charge time before doing 45 damage to the enemy
-             </li>
-              <li>
-               Mighty Meowbot can die in 2 ways. The first way is the moment that it is thrown, there is a 32 second
+            </li>
+             <li>
+                Mighty Meowbot can die in 2 ways. The first way is the moment that it is thrown, there is a 32 second
                 countdown before it despawns. The second way is if it is destroy by enemy, Meowbot has 750hp.
               </li>
               <li>
@@ -129,7 +131,7 @@
         </div>
         <div id="weapons" data-role="weapon">
           <h3>Primary Gun: Inspector</h3>
-          <img src="/public/agents/michele/Michele's Gun Inspector.webp" />
+            <img src="/public/agents/michele/Michele's Gun Inspector.webp" />
           <p>
             Michele main gun, Inspector, has a maganize of 30 and damage based on the distance of the enemy is. This gun has
             a great balance of recoil, spread, and firing rate allowing it to be one of the best weapons in the game.
@@ -141,12 +143,13 @@
           <img src="/public/shared/Accuracy.png" loading="lazy" />
           <img src="/public/shared/Critical Hit.png" loading="lazy" />
           <img src="/public/shared/Capacity.png" loading="lazy" />
-          <img src="/public/agents/michele/Michele Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/michele/Michele Active Upgrade.png" loading="lazy" />
           <img src="/public/agents/michele/Michele Passive Upgrade.png" loading="lazy" />
           <img src="/public/shared/Armor.png" loading="lazy" />
           <img src="/public/shared/Stringify.png" loading="lazy" />
         </div>
-          <script src="all-agent.js"></script>
-     </div>
-    </body>
+         <script src="all-agent.js"></script>
+      </div>
+    </div>
+  </body>
 </html>
