@@ -6,6 +6,7 @@
     <title>Michele | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+        <link rel="stylesheet" type="text/css" href="all-agent-design.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -16,19 +17,19 @@
         <div><a href="/src/app/mechanics/page.html">MECHANICS</a></div>
       </div>
     </nav>
-    <div id="michele">
+    <div id="agent">
       <img src="/public/agents/michele/Michele.webp" alt="Michele" width="400" />
       <div class="title">
         <h1>Michele</h1>
-        <div class="active">
-          <p data-role="about">ABOUT</p>
+        <div class="sub-titles">
+          <p class="active" data-role="about">ABOUT</p>
           <p data-role="skills">SKILLS</p>
           <p data-role="weapons">WEAPONS</p>
           <p data-role="upgrades">UPGRADES</p>
         </div>
       </div>
-      <div class="main-information">
-        <div class="about-information" data-role="about">
+      <div class="main">
+        <div  id="about-information" data-role="about">
           <h3>Role: Senitinel</h3>
           <p>
             Michele is a rookie P.U.S investigator in the world of strinova. She is a gamer that applies her gaming to her
@@ -37,11 +38,11 @@
             hero like her father who under unknown circumstances has fallen for collpase syndrome.
           </p>
         </div>
-        <div id="Michele-Skills">
+        <div id="skills">
           <div class="skill-images" data-role="skills">
-            <img src="/public/agents/michele/Michele active skill.webp" alt="Michele ActiveSkill" />
-            <img src="/public/agents/michele/Michele passive.webp" alt="Michele PassiveSkill" />
-            <img src="/public/agents/michele/Michele Ultimate Skill.webp" alt="Michele UltimateSkill" />
+            <img src="/public/agents/michele/Michele active skill.webp" data-role="active-skill"  alt="Michele ActiveSkill" />
+            <img src="/public/agents/michele/Michele passive.webp" data-role="passive-skill -skill" alt="Michele PassiveSkill" />
+            <img src="/public/agents/michele/Michele Ultimate Skill.webp" data-role="passive-skill" alt="Michele UltimateSkill" />
           </div>
           <div class="skill-title">
             <p data-role="about-skill">ABOUT</p>
@@ -50,7 +51,7 @@
           </div>
 
           <div id="active-skill">
-            <div class="active-about" data-role="about">
+            <div class="active-about" data-role="about-skill">
               <h3>Pawtector</h3>
               <p>Type: damage</p>
               <p>
@@ -78,18 +79,18 @@
           </div>
 
           <div id="passive-skill">
-            <div class="passive-about" data-role="about">
+            <div id="passive-about" data-role="about-skill">
               <h3>Kitty Tracer</h3>
               <p>Type: detect</p>
               <p>Allows her to see enemies that inflicts damagge towards her with any weapon</p>
             </div>
-            <div class="passive-deatils" data-role="details">
+            <div id="passive-deatils" data-role="details">
               <h4>Details</h4>
               <ul>
                 <li>The detectation only lasts for 2 seconds and can only be seen by Michele.</li>
               </ul>
             </div>
-            <div class="passive-video" data-role="video">
+            <div id="passive-video" data-role="video">
               <video width="400" controls autoplay loop>
                 <source src="/public/agents/michele/Michele Passive Vid.mp4" />
               </video>
@@ -97,12 +98,12 @@
           </div>
 
           <div id="ultimate-skll">
-            <div class="ultimate-about" data-role="about">
+            <div id="ultimate-about" data-role="about-skill">
               <h3>Mighty MeowBlast</h3>
               <p>Type: damage</p>
               <p>Michele throws a powerful turret into the battlefield that auto-attacks nearby enemies</p>
             </div>
-            <div class="ultimate-deatils" data-role="details">
+            <div id="ultimate-deatils" data-role="details">
               <h4>Details</h4>
               <ul>
                 <li>It can only attack one enemy at a time</li>
@@ -121,14 +122,14 @@
                 </li>
               </ul>
             </div>
-            <div class="ultimate-video" data-role="video">
+            <div id="ultimate-video" data-role="video">
             <video width="400" controls autoplay loop>
               <source src="/public/agents/michele/Michele Ultimate Vid.mp4" />
             </video>
             </div>
           </div>
 
-          <div class="weapons" data-role="weapon">
+          <div id="weapons" data-role="weapon">
             <h3>Primary Gun: Inspector</h3>
             <img src="/public/agents/michele/Michele's Gun Inspector.webp" />
             <p>
@@ -137,7 +138,7 @@
             </p>
           </div>
 
-          <div class="upgrades" data-role="upgrades">
+          <div id="upgrades" data-role="upgrades">
             <h2>Upgrades</h2>
             <img src="/public/shared/Firing.png" loading="lazy" />
             <img src="/public/shared/Accuracy.png" loading="lazy" />
@@ -148,6 +149,7 @@
             <img src="/public/shared/Armor.png" loading="lazy" />
             <img src="/public/shared/Stringify.png" loading="lazy" />
           </div>
+            <script src="all-agent.js"></script>
       </div>
     </body>
 </html>

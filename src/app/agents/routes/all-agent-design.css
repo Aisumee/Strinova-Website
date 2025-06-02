@@ -1,0 +1,32 @@
+/* Hide all main content sections by default */
+.main > div[data-role],
+#skills {
+  display: none;
+}
+
+
+/* --- ADD THESE RULES (or similar) to initially hide Weapon/Upgrade content --- */
+/* This ensures the JS has something to "show" explicitly */
+.weapons img,
+.weapons p {
+    display: none; /* Hide images and paragraphs in the weapons section initially */
+}
+
+.upgrades img {
+    display: none; /* Hide all images in the upgrades section initially */
+}
+
+/* --- Existing Styles (from previous responses) --- */
+.sub-titles p.active,
+.skill-title p.active {
+  font-weight: bold;
+  color: #007bff;
+  cursor: default;
+}
+
+.sub-titles p,
+.skill-title p {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
