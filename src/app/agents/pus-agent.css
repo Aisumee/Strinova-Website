@@ -1,0 +1,92 @@
+h3 {
+    margin-top: 0;
+}
+
+.agent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 9rem;
+    background-image: url(/public/bg/Strinova\ Background.jpg);
+}
+
+.agent-image {
+    position: relative;
+    top: -75px;
+}
+
+.agent-symbol {
+    position: absolute;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 2.75rem;
+    border-bottom: rgb(91, 153, 182) solid;
+    margin-right: 300px;
+    margin-bottom: 0;
+}
+
+.subtitles,
+.skill-title {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.skill-images {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skill-images img {
+    background-color: var(--color-base-200);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: var(--radius-selector);
+}
+
+.skill-images img:hover,
+.skill-images img.active {
+    background-color: var(--color-base-300);
+    transform: scale(1.05);
+}
+
+.subtitles button,
+.skill-title button {
+    background-color: var(--color-base-200);
+    border-radius: var(--radius-selector);
+    color: #b6b6b6;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subtitles button {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.skill-title button {
+    padding: 0.4rem;
+    font-size: 1.25rem;
+}
+
+.subtitles button:hover,
+.subtitles button.active,
+.skill-title button:hover,
+.skill-title button.active {
+    background-color: var(--color-base-300);
+    color: white;
+}
+
+.skills>* {
+    padding-bottom: 1rem;
+}
