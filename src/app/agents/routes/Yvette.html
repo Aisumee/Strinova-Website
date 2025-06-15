@@ -6,107 +6,162 @@
     <title>Yvette | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Yvette">
-      <img src="/public/agents/yvette/yvette.webp" alt="Yvette" width="400" />
-      <h1>Yvette</h1>
-      <h3>Role: Controller</h3>
-      <h2>Background</h2>
-      <p>
-        Yvette is a brilliant P.U.S researcher who always carries her stuffed teddy bear, “Fay,” wherever she goes.
-        Despite her introverted nature, she holds a strong trust in her friends. In battle, she uses Fay to lock down
-        the battlefield, suppressing the enemy’s movements.
-      </p>
-      <p>
-        Quiet, shy, and reserved, Yvette is a researcher at P.U.S. Though she may seem distant on the outside, she has a
-        warm heart and cares deeply for those close to her. With the aid of Fay, her trusty bear, she summons freezing
-        frost that immobilizes and traps her enemies.
-      </p>
-    </div>
-    <hr />
-    <div id="Yvette-Skills">
-      <h2>Skills</h2>
-      <div id="Yvette-ActiveSkill">
-        <h3>Active Skill: Teddy Assault</h3>
-        <img src="/public/agents/yvette/Yvette Active Skill.webp" alt="Yvette ActiveSkill" />
-        <p>Type: Summon</p>
-        <p>
-          Yvette summons Fay, a controllable teddy bear that creates an icy surface upon colliding or on command,
-          causing slipping and amplifies damage taken.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Radius: 10m</li>
-          <li>Deploy time: 2 seconds</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/yvette/Yvette Active vid.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/pus-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/yvette/yvette.webp" alt="Michele" width="500" />
       </div>
-      <div id="Yvette-PassiveSkill">
-        <h3>Passive Skill: Camouflage</h3>
-        <img src="/public/agents/yvette/Yvette Passive Skill.webp" alt="Yvette PassiveSkill" />
-        <p>Type: Stealth</p>
-        <p>
-          Yvette becomes Camouflage after standing still for a period of time. She remains invisible from distant
-          enemies and gradually becomes visuable the closer the enemies are.
-        </p>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/yvette/Yvette Passive vid.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">YVETTE</h1>
+        <img class="emoji" src="/public/emojis/yvette-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Controller</h3>
+            <p>
+              Yvette is a brilliant P.U.S researcher who always carries her stuffed teddy bear, “Fay,” wherever she goes.
+              Despite her introverted nature, she holds a strong trust in her friends. In battle, she uses Fay to lock down
+              the battlefield, suppressing the enemy’s movements.
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/yvette/Yvette Active Skill.webp"
+                data-role="active-skill"
+                alt="yvette ActiveSkill"
+              />
+              <img
+                src="/public/agents/yvette/Yvette Passive Skill.webp"
+                data-role="passive-skill"
+                alt="yvette PassiveSkill"
+              />
+              <img
+                src="/public/agents/yvette/Yvette Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="yvette UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Teddy Assault</h3>
+                    <p>Type: Summon</p>
+                    <p>
+                      Yvette summons Fay, a controllable teddy bear that creates an icy surface upon colliding or on command,
+                      causing slipping and amplifies damage taken.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Teddy Assault</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Radius: 10m</li>
+                    <li>Deploy time: 2 seconds</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Teddy Assault</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/yvette/Yvette Active vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Camouflage</h3>
+                  <p>Type: Stealth</p>
+                  <p>
+                    Yvette becomes Camouflage after standing still for a period of time. She remains invisible from distant
+                    enemies and gradually becomes visuable the closer the enemies are.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Camouflage</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Pretty self explanatory</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Camouflage</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/yvette/Yvette Passive vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Frostfall</h3>
+                  <p>Type: Weaken</p>
+                  <p>
+                    Yvette summons a Frost Bear that creates 3 Polar Zones in succession, causing enemies to slip, slowing their
+                    fire rate, and reducing weapon usability.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Frostfall</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 7 Ultimate Points</li>
+                    <li>Debuffs: Fragile, Slippery, Rate of Fire Reduction, Weapon Usability Weakened</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Frostfall</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/yvette/Yvette Ultimate vid.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Beareas</h3>
+            <img src="/public/agents/yvette/Yvette Gun.webp" />
+            <p>
+              A light-weight submachine gun with an unusually high rate of fire and precision compared to most other weapons in its class. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/shared/Handling.png" loading="lazy" />
+            <img src="/public/agents/yvette/Yvette Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/yvette/Yvette Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Yvette-UltimateSkill">
-        <h3>Ultime Skill: Frostfall</h3>
-        <img src="/public/agents/yvette/Yvette Ultimate Skill.webp" alt="Yvette UltimateSkill" />
-        <p>Type: Weaken</p>
-        <p>
-          Yvette summons a Frost Bear that creates 3 Polar Zones in succession, causing enemies to slip, slowing their
-          fire rate, and reducing weapon usability.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>Debuffs: Fragile, Slippery, Rate of Fire Reduction, Weapon Usability Weakened</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/yvette/Yvette Ultimate vid.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Yvette-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Beareas</h3>
-      <img src="/public/agents/yvette/Yvette Gun.webp" />
-      <p></p>
-    </div>
-    <div id="Yvette-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="/public/shared/Handling.png" loading="lazy" />
-      <img src="/public/agents/yvette/Yvette Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/yvette/Yvette Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

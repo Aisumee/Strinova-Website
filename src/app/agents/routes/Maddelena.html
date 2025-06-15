@@ -6,111 +6,169 @@
     <title>Maddelena | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Maddelena">
-      <img src="/public/agents/maddelena/Maddelena.webp" alt="Maddelena" width="400" />
-      <h1>Maddelena</h1>
-      <h3>Role: Controller</h3>
-      <h2>Background</h2>
-      <p>
-        A scatterbrained artist who joined urbino with great interest with the world around her. Given the lack of
-        combat experience, Urbino developed a special spray gun allowing maddelena to play a suuportive role on the
-        battlefield
-      </p>
-    </div>
-    <hr />
-    <div id="Maddelena-Skills">
-      <h2>Skills</h2>
-      <div id="Maddelena-ActiveSkill">
-        <h3>Active Skill: Pigment Bind</h3>
-        <img src="/public/agents/maddelena/Maddelena Active Skill.webp" alt="Maddelena ActiveSkill" />
-        <p>Type: Weaken</p>
-        <p>
-          Maddelena covers the target zone in paint, slowing, string-blocking, and exposing the tracks of traversing
-          enemies.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>2 charges without upgrades</li>
-          <li>Cooldown: 20</li>
-          <li>Duration: 15 Seconds</li>
-          <li>Can be splashed on walls and can splash through walls</li>
-          <li>
-            Can collide with enemies projectiles resulting in the paint being splashed on the spot where they collided
-          </li>
-          <li>Paints of opposing teams take effect simultaneously</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/maddelena/Maddelena Active.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/urbino-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/maddelena/Maddelena.webp" alt="Michele" width="500" />
       </div>
-      <div id="Maddelena-PassiveSkill">
-        <h3>Passive Skill: Paint Tracks</h3>
-        <img src="/public/agents/maddelena/Maddelena Passive Skill.webp" alt="Maddelena PassiveSkill" />
-        <p>Type: Detect</p>
-        <p>Hits from maddelena primary weapons allows her to expose enemies tracks and slow them down</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Duration: 2</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/maddelena/Maddelena Passive.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">MADDELENA</h1>
+        <img class="emoji" src="/public/emojis/madelena-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Controller</h3>
+            <p>
+              A scatterbrained artist who joined urbino with great interest with the world around her. Given the lack of
+              combat experience, Urbino developed a special spray gun allowing maddelena to play a suuportive role on the
+              battlefield
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/maddelena/Maddelena Active Skill.webp"
+                data-role="active-skill"
+                alt="maddelena ActiveSkill"
+              />
+              <img
+                src="/public/agents/maddelena/Maddelena Passive Skill.webp"
+                data-role="passive-skill"
+                alt="maddelena PassiveSkill"
+              />
+              <img
+                src="/public/agents/maddelena/Maddelena Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="maddelena UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Pigment Bind</h3>
+                    <p>Type: Weaken</p>
+                    <p>
+                      Maddelena covers the target zone in paint, slowing, string-blocking, and exposing the tracks of traversing
+                      enemies.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Pigment Bind</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>2 charges without upgrades</li>
+                    <li>Cooldown: 20</li>
+                    <li>Duration: 15 Seconds</li>
+                    <li>Can be splashed on walls and can splash through walls</li>
+                    <li>
+                      Can collide with enemies projectiles resulting in the paint being splashed on the spot where they collided
+                    </li>
+                    <li>Paints of opposing teams take effect simultaneously</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Pigment Bind</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/maddelena/Maddelena Active.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Paint Tracks</h3>
+                  <p>Type: Detect</p>
+                  <p>
+                    Hits from maddelena primary weapons allows her to expose enemies tracks and slow them downal
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Paint Tracks</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Duration: 2</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Paint Tracks</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/maddelena/Maddelena Passive.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Paint Bubble</h3>
+                  <p>Type: Weaken</p>
+                  <p>
+                    Shoots a paint bubble that string-blocks and exposing tracks of enemies within. Once exploded, it deals
+                    additional slowing and damage amplifcation effects against enemies within
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Paint Bubble</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 7 Ultimate Points</li>
+                    <li>Duration: 15 Seconds</li>
+                    <li>Damage bonus: 35%</li>
+                    <li>Pop debuff durations: 5 Seconds</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Paint Bubble</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/maddelena/Maddelena Ultimate.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Chroma</h3>
+            <img src="/public/agents/maddelena/Maddelena Gun Chroma.webp" />
+            <p>
+              Balancing power and range perfectly, the marksman rifle excels at suppressing mid-to-long-distance targets. Comes equipped with a 1.5x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/agents/maddelena/Maddelena Accuracy.png" loading="lazy" />
+            <img src="Capacity.png" loading="lazy" />
+            <img src="Core.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/agents/maddelena/Maddelena Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/maddelena/Maddelena Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Maddelena-UltimateSkill">
-        <h3>Ultimate Skill: Paint Bubble</h3>
-        <img src="/public/agents/maddelena/Maddelena Ultimate Skill.webp" alt="Maddelena UltimateSkill" />
-        <p>Type: Weaken</p>
-        <p>
-          Shoots a paint bubble that string-blocks and exposing tracks of enemies within. Once exploded, it deals
-          additional slowing and damage amplifcation effects against enemies within
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>Duration: 15 Seconds</li>
-          <li>Damage bonus: 35%</li>
-          <li>Pop debuff durations: 5 Seconds</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/maddelena/Maddelena Ultimate.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Maddelena-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Chroma</h3>
-      <img src="/public/agents/maddelena/Maddelena Gun Chroma.webp" />
-      <p></p>
-    </div>
-    <div id="Maddelena-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/agents/maddelena/Maddelena Accuracy.png" loading="lazy" />
-      <img src="Capacity.png" loading="lazy" />
-      <img src="Core.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="/public/agents/maddelena/Maddelena Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/maddelena/Maddelena Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

@@ -6,92 +6,158 @@
     <title>Eika | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Eika">
-        <img src="/public/agents/eika/Eika.webp" alt="Eika" width="400"/>
-        <h1>Eika</h1>
-        <h3>Role: Duelist</h3>
-        <h2>Background</h2>
-        <p>Capable of controlling flames, she protects the streets of Preton in secret, quietly aiding those who have supported the area.</p>
-    </div>
-    <hr>
-    <div id="Eika-Skills">
-     <h2>Skills</h2>
-     <div id="Eika-ActiveSkill">
-            <h3>Active Skill: Purgatory</h3>   
-            <img src="/public/agents/eika/Eika Active Skill.webp" alt="Eika ActiveSkill"> 
-            <p>Type: Enchance</p>
-            <p>Eika summons a spherical fire cage that burns traversing enemies, which will also extend the cage's lifespan. Eika's primary weapon deals additional fire damage to enemies within while Eika is also in the cage. 100 flame: increases cage damage.</p>
-            <h4>Details</h4>
-            <ul>
-                <li>The fire cage needs 2.5 seconds to form and deals damage only after being formed. Lasts around 5.5 seconds.</li>
-                <li>The fire cage has radius 10 meters.</li>
-                <li>Enemies that enter or leave the fire cage will receive 30 damage (60 when buffed by full heat).</li>
-                <li>When both Eika and the enemy is in the cage, each shot's damage is increased by 2.</li>
-            </ul>
-        <h4>How to play</h4>
-        <video width="400" controls loop>
-            <source src="/public/agents/eika/Eika Active Skill.mp4">
-        </video>
-     </div>
-     <div id="Eika-PassiveSkill">
-            <h3>Passive Skill: Sol Battery</h3>
-            <img src="/public/agents/eika/Eika Passive Skill.webp" alt="Eika PassiveSkill"> 
-            <p>Type: Enchance</p>
-            <p>Each shot on an enemy accumulates Heat up to 100. At max Heat, DMG against stringified enemies increases. Other skills can consume Heat for boosts.</p>
-            <h4>Details</h4>
-            <ul>
-                <li>Both the weapon being used and the part hit will affect the amount of heat gain. Ninjato does not accumulate any heat.</li>
-            </ul>
-            <h4>How to play</h4>
-            <video width="400" controls loop src="/public/agents/eika/Eika Passive Skill.mp4">
-     </div>
-     <div id="Eika-UltimateSkill">
-            <h3>Ultimate Skill: Firestorm</h3>
-            <img src="/public/agents/eika/Eika Ultimate Skill.webp" alt="Eika UltimateSkill">
-            <p>Type: Damage</p>
-            <p>Summons up to 3 Firestorms per round, force gliding and dealing Burn DMG to enemies in range. Consuming 100 Heat increases Firestorm size, Burn DMG, and highlights enemies.</p>
-            <h4>Details</h4>
-            <ul>
-                <li>Cost: 7 Ultinate Points</li>
-                <li></li>
-            </ul>
-            <h4>How to play</h4>
-            <video width="400" controls loop>
-                <source src="/public/agents/eika/Eika Ultimate Skill.mp4">
-            </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/scissors-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/eika/Eika.webp" alt="Michele" width="500" />
+      </div>
+      <div class="main-stuff">
+        <h1 class="title">EIKA</h1>
+        <img class="emoji" src="/public/emojis/eika-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Duelist</h3>
+            <p>
+              Capable of controlling flames, she protects the streets of Preton in secret, quietly aiding those who have supported the area.
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/eika/Eika Active Skill.webp"
+                data-role="active-skill"
+                alt="eika ActiveSkill"
+              />
+              <img
+                src="/public/agents/eika/Eika Passive Skill.webp"
+                data-role="passive-skill"
+                alt="eika PassiveSkill"
+              />
+              <img
+                src="/public/agents/eika/Eika Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="eiks UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Purgatory</h3>
+                    <p>Type: Enchance</p>
+                    <p>
+                      Eika summons a spherical fire cage that burns traversing enemies, which will also extend the cage's lifespan. Eika's primary weapon deals additional fire damage to enemies within while Eika is also in the cage. 100 flame: increases cage damage.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Purgatory</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>The fire cage needs 2.5 seconds to form and deals damage only after being formed. Lasts around 5.5 seconds.</li>
+                    <li>The fire cage has radius 10 meters.</li>
+                    <li>Enemies that enter or leave the fire cage will receive 30 damage (60 when buffed by full heat).</li>
+                    <li>When both Eika and the enemy is in the cage, each shot's damage is increased by 2.</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Purgatory</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/eika/Eika Active Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Sol Battery</h3>
+                  <p>Type: Enchance</p>
+                  <p>
+                    Each shot on an enemy accumulates Heat up to 100. At max Heat, DMG against stringified enemies increases. Other skills can consume Heat for boosts.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Sol Battery</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Both the weapon being used and the part hit will affect the amount of heat gain. Ninjato does not accumulate any heat.</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Sol Battery</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/eika/Eika Passive Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Firestorm</h3>
+                  <p>Type: Damage</p>
+                  <p>
+                    Summons up to 3 Firestorms per round, force gliding and dealing Burn DMG to enemies in range. Consuming 100 Heat increases Firestorm size, Burn DMG, and highlights enemies.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Firestorm</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 7 Ultinate Points</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Firestorm</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/eika/Eika Ultimate Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Wildfire</h3>
+            <img src="/public/agents/eika/Eika Gun Wildfire.webp" />
+            <p>
+              Fully automatic combat shotgun. There's nothing quite like it.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/agents/eika/Eika Firing.png" loading="lazy">
+            <img src="/public/agents/eika/Eika ACcuracy.png" loading="lazy">
+            <img src="/public/agents/eika/Eika Core.png" loading="lazy">
+            <img src="/public/agents/eika/EIka Capacity.png" loading="lazy">
+            <img src="/public/agents/eika/Eika Active Upgrade.png" loading="lazy">
+            <img src="/public/agents/eika/Eika Passive Upgrade.png" loading="lazy">
+            <img src="/public/shared/Armor.png" loading="lazy">
+            <img src="/public/shared/Stringify.png" loading="lazy">
+          </div>
+        </div>
       </div>
     </div>
-        <hr>
-        <div id="Eika-Weapon">
-        <h2>Weapon</h2>
-        <h3>Primary Gun: Wildfire</h3>
-        <img src="/public/agents/eika/Eika Gun Wildfire.webp">
-        <p></p>
-    </div>
-    <div id="Eika-Upgrades">
-        <hr>
-        <h2>Upgrades</h2>
-        <img src="/public/agents/eika/Eika Firing.png" loading="lazy">
-        <img src="/public/agents/eika/Eika ACcuracy.png" loading="lazy">
-        <img src="/public/agents/eika/Eika Core.png" loading="lazy">
-        <img src="/public/agents/eika/EIka Capacity.png" loading="lazy">
-        <img src="/public/agents/eika/Eika Active Upgrade.png" loading="lazy">
-        <img src="/public/agents/eika/Eika Passive Upgrade.png" loading="lazy">
-        <img src="/public/shared/Armor.png" loading="lazy">
-        <img src="/public/shared/Stringify.png" loading="lazy">
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
-</body>
+
+    <script src="../all-agent.js"></script>
+  </body>
+</html>

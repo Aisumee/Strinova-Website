@@ -6,111 +6,169 @@
     <title>Galatea | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Galatea">
-      <img src="/public/agents/galatea/Galatea.webp" alt="Galatea" width="400" />
-      <h1>Galatea</h1>
-      <h3>Role: Vanguard</h3>
-      <h2>Background</h2>
-      <p>
-        A renowned magician and a mad artist hiding behind a beautiful appearance. She is also the older sister of
-        Maddelena
-      </p>
-    </div>
-    <hr />
-    <div id="Galatea-Skills">
-      <h2>Skills</h2>
-      <div id="Galatea-ActiveSkill">
-        <h3>Active Skill: Wild Card</h3>
-        <img src="/public/agents/galatea/Galatea Active Skill.webp" alt="Galatea ActiveSkill" />
-        <p>Type: Teleport</p>
-        <p>
-          Galatea throws a card in an arc. Upon impact with the ground or a wall, it creates a decoy. Press the interact
-          key to teleport to the decoy's location.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cooldown: 20 without upgrades</li>
-          <li>Duration: 7 without upgrades</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/galatea/Galatea Active.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/urbino-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/galatea/Galatea.webp" alt="Michele" width="500" />
       </div>
-      <div id="Galatea-PassiveSkill">
-        <h3>Passive Skill: Deception</h3>
-        <img src="/public/agents/galatea/Galatea Passive Skill.webp" alt="Galatea PassiveSkill" />
-        <p>Type: Decoy</p>
-        <p>
-          Galatea leaves behind a decoy whenever she unsticks from a wall. This passive only goes on cooldown if a decoy
-          takes damage. Her decoys briefly detect nearby enemies not hidden behind obstacles, revealing them to her
-          team. Enemies attacking the decoys are also temporarily exposed.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Duration: 7 seconds without upgrades</li>
-          <li>Can be destroyed by abilities and Guns</li>
-          <li>Cooldown when wall-decoy is damaged: 10 without upgrades</li>
-          <li>
-            Making a new wall-decoy, the previous one will disappear; more can exist by using her ultimate and active
-            skill
-          </li>
-          <li>Making a wall-decoy is loud</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/galatea/Galatea Passive.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">GALATEA</h1>
+        <img class="emoji" src="/public/emojis/galatea-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Vanguard</h3>
+            <p>
+              A renowned magician and a mad artist hiding behind a beautiful appearance. She is also the older sister of
+              Maddelena
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/galatea/Galatea Active Skill.webp"
+                data-role="active-skill"
+                alt="galatea ActiveSkill"
+              />
+              <img
+                src="/public/agents/galatea/Galatea Passive Skill.webp"
+                data-role="passive-skill"
+                alt="galatea PassiveSkill"
+              />
+              <img
+                src="/public/agents/galatea/Galatea Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="galatea UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Wild Card</h3>
+                    <p>Type: Teleport</p>
+                    <p>
+                      Galatea throws a card in an arc. Upon impact with the ground or a wall, it creates a decoy. Press the interact
+                      key to teleport to the decoy's location.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Wild Card</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cooldown: 20 without upgrades</li>
+                    <li>Duration: 7 without upgrades</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Wild Card</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/galatea/Galatea Active.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Deception</h3>
+                  <p>Type: Decoy</p>
+                  <p>
+                    Galatea leaves behind a decoy whenever she unsticks from a wall. This passive only goes on cooldown if a decoy
+                    takes damage. Her decoys briefly detect nearby enemies not hidden behind obstacles, revealing them to her
+                    team. Enemies attacking the decoys are also temporarily exposed.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Deception</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Duration: 7 seconds without upgrades</li>
+                    <li>Can be destroyed by abilities and Guns</li>
+                    <li>Cooldown when wall-decoy is damaged: 10 without upgrades</li>
+                    <li>
+                      Making a new wall-decoy, the previous one will disappear; more can exist by using her ultimate and active
+                      skill
+                    </li>
+                    <li>Making a wall-decoy is loud</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Deception</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/galatea/Galatea Passive.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Mirage</h3>
+                  <p>Type: Teleport</p>
+                  <p>
+                    Galatea throws serval cards, each decoy allowing for teleportation
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Mirage</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 5 Ultimate Points</li>
+                    <li>Duration: 15 Seconds</li>
+                    <li>3 cards are thrown, 75 degress apart</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Mirage</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/galatea/Galatea Ultimate.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Gambit</h3>
+            <img src="/public/agents/galatea/Galate Gun Gambit.webp" />
+            <p>
+              This high-performance, weather-resistant assault rifle delivers powerful firepower and unbeatable value. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/shared/Capacity.png" loading="lazy" />
+            <img src="/public/agents/galatea/Galatea Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/galatea/Galatea Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Galatea-UltimateSkill">
-        <h3>Ultimate Skill: Mirage</h3>
-        <img src="/public/agents/galatea/Galatea Ultimate Skill.webp" alt="Galatea UltimateSkill" />
-        <p>Type: Teleport</p>
-        <p>Galatea throws serval cards, each decoy allowing for teleportation</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 5 Ultimate Points</li>
-          <li>Duration: 15 Seconds</li>
-          <li>3 cards are thrown, 75 degress apart</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/galatea/Galatea Ultimate.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Galatea-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Gambit</h3>
-      <img src="Galate Gun Gambit.webp" />
-      <p></p>
-    </div>
-    <div id="Galatea">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="Capacity.png" loading="lazy" />
-      <img src="/public/agents/galatea/Galatea Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/galatea/Galatea Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

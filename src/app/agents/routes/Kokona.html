@@ -6,118 +6,171 @@
     <title>Kokona | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Kokona-Description">
-      <img src="/public/agents/kokona/Kokona.webp" alt="Kokona" width="400px" />
-      <h1>Kokona</h1>
-      <h3>Role: Support</h3>
-      <h2>Background</h2>
-      <p>
-        Kokona, a combat medic and a seasoned instructor within the P.U.S, has guided numerous junior investigators.
-        While she can be casual and even a bit lazy at times, Kokona also possesses a detail-oriented and considerate
-        nature. However, underestimate her at your peril as her sniper rifle strike fear into the heart of those who
-        dare to oppose her teammates.
-      </p>
-    </div>
-    <hr />
-    <div id="Kokona-Skills">
-      <h2>Skills</h2>
-      <div id="Kokona-ActiveSkill">
-        <h3>Active Skill: Healing Drone</h3>
-        <img src="/public/agents/kokona/Kokona active skill.webp" alt="Kokona ActiveSkill" />
-        <p>Type: Healing</p>
-        <p>
-          Kokona deploys a healing drone that hovers over the chosen target, and restores armor to the target and all
-          nearby allies
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>
-            The drone has a cooldown of 25 seconds and last 30 seconds before flying away. The drone can also be
-            destroyed after the player takes 50 damage.
-          </li>
-          <li>The drone heals its target 0+5/sec and nearby allies 0+5/sec</li>
-          <li>
-            The drone-giving animation can be canceled by gliding right after using the skill. This will still give your
-            chosen target the drone
-          </li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/kokona/Kokona Active Skill Vid.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/pus-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/kokona/Kokona.webp" alt="Michele" width="500" />
       </div>
-      <div id="Kokona-PassiveSkill">
-        <h3>Passive Skill: First Aid</h3>
-        <img src="/public/agents/kokona/Kokona Passive Skill.webp" alt="Kokona PassiveSkill" />
-        <p>Type: Rescue</p>
-        <p>
-          When Kokona is out of combat, she will slowly start regenernating her hp. Kokona can also deploy a recuse
-          drone to rescue nearby downed allies
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Heals 0+2/sec.</li>
-        </ul>
-        <video width="400" controls autoplay="true" loop>
-          <source src="/public/agents/kokona/Kokona Passive Skill Vid.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">KOKONA</h1>
+        <img class="emoji" src="/public/emojis/kokona-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Support</h3>
+            <p>
+              Kokona, a combat medic and a seasoned instructor within the P.U.S, has guided numerous junior investigators.
+              While she can be casual and even a bit lazy at times, Kokona also possesses a detail-oriented and considerate
+              nature. However, underestimate her at your peril as her sniper rifle strike fear into the heart of those who
+              dare to oppose her teammates.
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/kokona/Kokona active skill.webp"
+                data-role="active-skill"
+                alt="Kokona ActiveSkill"
+              />
+              <img
+                src="/public/agents/kokona/Kokona Passive Skill.webp"
+                data-role="passive-skill"
+                alt="Kokona PassiveSkill"
+              />
+              <img
+                src="/public/agents/kokona/Kokona Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="Kokona UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Healing Drone</h3>
+                    <p>Type: Healing</p>
+                    <p>
+                      Kokona deploys a healing drone that hovers over the chosen target, and restores armor to the target and all
+                      nearby allies
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Healing Drone</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>The drone has a cooldown of 25 seconds and last 30 seconds before flying away. The drone can also be destroyed after the player takes 50 damage.</li>
+                    <li>The drone heals its target 0+5/sec and nearby allies 0+5/sec</li>
+                    <li>The drone-giving animation can be canceled by gliding right after using the skill. This will still give your chosen target the drone</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Healing Drone</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/kokona/Kokona Active Skill Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >First Aid</h3>
+                  <p>Type: Rescue</p>
+                  <p>When Kokona is out of combat, she will slowly start regenernating her hp. Kokona can also deploy a recuse drone to rescue nearby downed allies</p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >First Aid</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Heals 0+2/sec.</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >First Aid</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/kokona/Kokona Passive Skill Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Resurrection</h3>
+                  <p>Type: Resurrection</p>
+                  <p>Kokona can revive a fallen ally at her general location.</p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Resurrection</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 7 Ultimate Points</li>
+                    <li>It takes 0.6 seconds + 1.8 recovery time to start reviving</li>
+                    <li>
+                      5.7 seconds to fully revive the ally
+                    </li>
+                    <li>
+                      Does not reload any of ally's weapon
+                    </li>
+                    <li>
+                      Resurrection drone health has 200 and can be destroyed by getting shot at
+                    </li>
+                    <li>
+                      Allies that were resuurected will instantly be killed instead of getting knocked once they have no hp.
+                    </li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Resurrection</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/kokona/Kokona Ultimate Skill Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Quasar</h3>
+            <img src="/public/agents/kokona/Kokona Gun.webp" />
+            <p>
+              Kokona trustful gun, Quasar, is a intervention sniper rifle that has it all, precision, power, and stealth. This
+              snipepr comes with a 2.5x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Sniper capacity.png" loading="lazy" />
+            <img src="/public/shared/Sniper Firing.png" loading="lazy" />
+            <img src="/public/shared/Sniper Function.png" loading="lazy" />
+            <img src="/public/shared/Snipper Core.png" loading="lazy" />
+            <img src="/public/agents/kokona/Kokona Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/kokona/Kokona_Passive_Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Kokona-UltimateSkill">
-        <h3>Ultimate Skill: Reconstruction</h3>
-        <img src="/public/agents/kokona/Kokona Ultimate Skill.webp" alt="Kokona UltimateSkill" />
-        <p>Type: Resurrection</p>
-        <p>Kokona can revive a fallen ally at her general location.</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>It takes 0.6 seconds + 1.8 recovery time to start reviving</li>
-          <li>5.7 seconds to fully revive the ally</li>
-          <li>Does not reload any of ally's weapon</li>
-          <li>Resurrection drone health has 200 and can be destroyed by getting shot at</li>
-          <li>
-            Allies that were resuurected will instantly be killed instead of getting knocked once they have no hp.
-          </li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/kokona/Kokona Ultimate Skill Vid.mp4" />
-        </video>
-      </div>
     </div>
-    <div id="Kokona-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Quasar</h3>
-      <img src="/public/agents/kokona/Kokona Gun.webp" />
-      <p>
-        Kokona trustful gun, Quasar, is a intervention sniper rifle that has it all, precision, power, and stealth. This
-        snipepr comes with a 2.5x scope.
-      </p>
-    </div>
-    <div id="Kokona-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Sniper capacity.png" loading="lazy" />
-      <img src="/public/shared/Sniper Firing.png" loading="lazy" />
-      <img src="/public/shared/Sniper Function.png" loading="lazy" />
-      <img src="/public/shared/Snipper Core.png" loading="lazy" />
-      <img src="/public/agents/kokona/Kokona Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/kokona/Kokona Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

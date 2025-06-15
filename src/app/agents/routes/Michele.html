@@ -23,13 +23,14 @@
         <img class="agent-symbol" src="/public/bg/pus-symbol.png" width="500" />
         <img class="agent-image" src="/public/agents/michele/Michele.webp" alt="Michele" width="500" />
       </div>
-      <div class="main">
+      <div class="main-stuff">
         <h1 class="title">MICHELE</h1>
+        <img class="emoji" src="/public/emojis/michele-emoji.webp">
         <div class="subtitles">
-          <button data-role="about">ABOUT</button>
-          <button data-role="skills">SKILLS</button>
-          <button data-role="weapons">WEAPONS</button>
-          <button data-role="upgrades">UPGRADES</button>
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
         </div>
         <div>
           <div id="about">
@@ -60,15 +61,15 @@
               />
             </div>
             <div class="skill-title">
-              <button data-role="about">ABOUT</button>
-              <button data-role="details">DETAILS</button>
-              <button data-role="video">VIDEO</button>
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
             </div>
             <div>
               <div id="active-skill">
                 <div id="about">
                   <div class="active-about" data-role="about-skill">
-                    <h3>Pawtector</h3>
+                    <h3 class="skill-name">Pawtector</h3>
                     <p>Type: damage</p>
                     <p>
                       Michele depolys a Pawtector that can stick to any surfaces from a certain range. The Pawtector
@@ -78,6 +79,7 @@
                   </div>
                 </div>
                 <div id="details">
+                  <h3 class="skill-name">Pawtector</h3>
                   <h4>Details</h4>
                   <ul>
                     <li>Amount: 2/3 with upgrades</li>
@@ -89,6 +91,7 @@
                   </ul>
                 </div>
                 <div id="video">
+                  <h3 class="skill-name">Pawtector</h3>
                   <video width="400" controls loop>
                     <source src="/public/agents/michele/Michele Active Vid.mp4" />
                   </video>
@@ -96,17 +99,19 @@
               </div>
               <div id="passive-skill">
                 <div id="about">
-                  <h3>Kitty Tracer</h3>
+                  <h3 class="skill-name" >Kitty Tracer</h3>
                   <p>Type: detect</p>
-                  <p>Allows her to see enemies that inflicts damagge towards her with any weapon</p>
+                  <p>Allows her to see enemies that inflicts damage towards her with any weapon</p>
                 </div>
                 <div id="details">
+                  <h3 class="skill-name" >Kitty Tracer</h3>
                   <h4>Details</h4>
                   <ul>
                     <li>The detectation only lasts for 2 seconds and can only be seen by Michele.</li>
                   </ul>
                 </div>
                 <div id="video">
+                  <h3 class="skill-name" >Kitty Tracer</h3>
                   <video width="400" controls loop>
                     <source src="/public/agents/michele/Michele Passive Vid.mp4" />
                   </video>
@@ -114,11 +119,12 @@
               </div>
               <div id="ultimate-skill">
                 <div id="about">
-                  <h3>Mighty MeowBlast</h3>
+                  <h3 class="skill-name">Mighty MeowBlast</h3>
                   <p>Type: damage</p>
                   <p>Michele throws a powerful turret into the battlefield that auto-attacks nearby enemies</p>
                 </div>
                 <div id="details">
+                  <h3 class="skill-name">Mighty MeowBlast</h3>
                   <h4>Details</h4>
                   <ul>
                     <li>It can only attack one enemy at a time</li>
@@ -139,6 +145,7 @@
                   </ul>
                 </div>
                 <div id="video">
+                  <h3 class="skill-name">Mighty MeowBlast</h3>
                   <video width="400" controls loop>
                     <source src="/public/agents/michele/Michele Ultimate Vid.mp4" />
                   </video>

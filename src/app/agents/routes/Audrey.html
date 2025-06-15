@@ -6,96 +6,161 @@
     <title>Audrey | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Audrey">
-      <img src="/public/agents/audrey/Audrey.webp" alt="Audrey" width="400" />
-      <h1>Audrey</h1>
-      <h3>Role: Sentient</h3>
-      <h2>Background</h2>
-      <p>
-        After the betryal of her uncle, the reputation of the grove family diminishes. Audrey,The current head of the
-        Grove family wishes to bring glory back to the grove family. wielding supreme power in Urbino, she believes that
-        firepower equals justice.
-      </p>
-      <p></p>
-    </div>
-    <hr />
-    <div id="Audrey-Skills">
-      <h2>Skills</h2>
-      <div id="-ActiveSkill">
-        <h3>Active Skill: Guns Blazing</h3>
-        <img src="/public/agents/audrey/Audrey Active Skill.webp" alt="Audrey ActiveSkill" />
-        <p>Type: Shield</p>
-        <p>
-          Enables deployment mode to greatly increase rate of fire and avoid recoil and reloading. Audrey's excessive
-          fire will overheat the muzzle, and she will be unable to shoot.
-        </p>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/audrey/Audrey Active Skill.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/urbino-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/audrey/Audrey.webp" alt="Michele" width="500" />
       </div>
-      <div id="Audrey-PassiveSkill">
-        <h3>Passive Skill: Royal Shield</h3>
-        <img src="/public/agents/audrey/Audrey Passive Skill.webp" alt="Audrey PassiveSkill" />
-        <p>Type: Deploy</p>
-        <p>Audrey summons a frontal shield upon entering deployment or ADS mode with extra strength in the latter.</p>
-        <h4>Details</h4>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/audrey/Audrey Passive Vid.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">AUDREY</h1>
+        <img class="emoji" src="/public/emojis/audrey-emote.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Sentient</h3>
+            <p>
+              After the betryal of her uncle, the reputation of the grove family diminishes. Audrey,The current head of the
+              Grove family wishes to bring glory back to the grove family. wielding supreme power in Urbino, she believes that
+              firepower equals justice.
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/audrey/Audrey Active Skill.webp"
+                data-role="active-skill"
+                alt="audrey ActiveSkill"
+              />
+              <img
+                src="/public/agents/audrey/Audrey Passive Skill.webp"
+                data-role="passive-skill"
+                alt="audrey PassiveSkill"
+              />
+              <img
+                src="/public/agents/audrey/Audrey Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="audrey UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Guns Blazing</h3>
+                    <p>Type: Deploy</p>
+                    <p>
+                      Enables deployment mode to greatly increase rate of fire and avoid recoil and reloading. Audrey's excessive
+                      fire will overheat the muzzle, and she will be unable to shoot.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Guns Blazing</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>nothing here bozo</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Guns Blazing</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/audrey/Audrey Active Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Royal Shield</h3>
+                  <p>Type: Shield</p>
+                  <p>
+                    Audrey summons a frontal shield upon entering deployment or ADS mode with extra strength in the latter.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Royal Shield</h3>
+                  <h4>Details</h4>
+                  <ul>
+                   <li>nothing here bozo x2</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Royal Shield</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/audrey/Audrey Passive Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Bombardment</h3>
+                  <p>Type: Damage</p>
+                  <p>
+                    Audrey launches 6 rapid-fire grenades from a grenade launcher with ricocheting shrapnel that ignites the
+                    ground on detonation.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Bombardment</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>She can damage herself</li>
+                    <li>Cost: 7 Ultimate Points</li>
+                    <li>Damage does not stack</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Bombardment</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/audrey/Audrey Ultimate Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Champion</h3>
+            <img src="/public/agents/audrey/Audrey Gun Champion.webp" />
+            <p>
+              Known for its remarkable power and performance, this general-purpose machine gun was a classic sweeper weapon from old Earth's large-scale wars. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/agents/audrey/Audrey Functions.png" loading="lazy" />
+            <img src="/public/agents/audrey/Audrey Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/audrey/Audrey Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Audrey-UltimateSkill">
-        <h3>Ultimate Skill: Royal Shield</h3>
-        <img src="/public/agents/audrey/Audrey Ultimate Skill.webp" alt="Audrey UltimateSkill" />
-        <p>Type: Damage</p>
-        <p>
-          Audrey launches 6 rapid-fire grenades from a grenade launcher with ricocheting shrapnel that ignites the
-          ground on detonation.
-        </p>
-        <ul>
-          <li>She can damage herself</li>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>Damage does not stack</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/audrey/Audrey Ultimate Skill.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Audrey-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Champion</h3>
-      <img src="/public/agents/audrey/Audrey Gun Champion.webp" />
-      <p></p>
-    </div>
-    <div id="Audrey-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="/public/agents/audrey/Audrey Functions.png" loading="lazy" />
-      <img src="/public/agents/audrey/Audrey Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/audrey/Audrey Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

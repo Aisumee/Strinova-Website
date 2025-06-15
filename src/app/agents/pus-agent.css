@@ -2,6 +2,11 @@ h3 {
     margin-top: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
+
 .agent {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -11,24 +16,37 @@ h3 {
 
 .agent-image {
     position: relative;
-    top: -75px;
+    bottom: 40px;
+    right: 160px;
+    width: 550px;
 }
 
 .agent-symbol {
     position: absolute;
+    left: 0;
 }
 
-.main {
+.main-stuff {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
+    left: -150px;
+    width: 55rem
 }
 
 .title {
     color: rgb(0, 0, 0);
     font-size: 2.75rem;
     border-bottom: rgb(91, 153, 182) solid;
-    margin-right: 300px;
+    margin-right: 500px;
+    margin-bottom: 0;
+}
+.skill-name {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    border-bottom: rgb(91, 153, 182) solid;
+    margin-right: 500px;
     margin-bottom: 0;
 }
 
@@ -37,6 +55,9 @@ h3 {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    position: relative;
+    top: -50px;
+    left: -10px;
 }
 
 .skill-images {
@@ -46,47 +67,80 @@ h3 {
     justify-content: space-evenly;
 }
 
-.skill-images img {
-    background-color: var(--color-base-200);
+.skill-images img { 
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: var(--radius-selector);
+    width: 100px;
+    position: relative;
+    top: -60px;
 }
 
 .skill-images img:hover,
 .skill-images img.active {
-    background-color: var(--color-base-300);
     transform: scale(1.05);
 }
 
-.subtitles button,
-.skill-title button {
-    background-color: var(--color-base-200);
-    border-radius: var(--radius-selector);
-    color: #b6b6b6;
+.subtitles p,
+.skill-title p {
+    color: #000000;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-.subtitles button {
+.subtitles p {
     padding: 0.5rem;
     font-size: 1.6rem;
 }
 
-.skill-title button {
+.skill-title p {
     padding: 0.4rem;
     font-size: 1.25rem;
 }
 
-.subtitles button:hover,
-.subtitles button.active,
-.skill-title button:hover,
-.skill-title button.active {
-    background-color: var(--color-base-300);
-    color: white;
+
+.subtitles p :hover,
+.subtitles p.active,
+.skill-title p :hover,
+.skill-title p.active {
+    color:rgb(91, 153, 182);
+    cursor: pointer;
+
 }
 
 .skills>* {
     padding-bottom: 1rem;
+}
+.agent-image-container {
+    border-right: black solid 20px; 
+    width: 380px;
+}
+
+.emoji {
+    width: 85px;
+    position: absolute;
+    left: 290px;
+    transform: rotate(15deg);
+}
+
+#upgrades img {
+    width: 270px;
+}
+
+#upgrade{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#weapons img{
+    width: 500px;
+}
+#about, #details, #upgrades, #weapons, #video{
+    position: relative;
+    top: -80px;
+}
+
+.skill-title p :hover, .subtitles  :hover {
+    color:rgb(179, 107, 173);
 }

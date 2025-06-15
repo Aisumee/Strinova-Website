@@ -3,36 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Gallery</title>
-    <link rel="stylesheet" href="Main Page StyleSheet.css" />
+    <title>Fragrans | Strinova Fan Page</title>
+    <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
-    <div class="gallery-container">
-      <div class="gallery">
-        <div class="content-area">
-          <h1 id="gallery-title">P.U.S</h1>
-          <p id="gallery-description">
-            The official government of the new world, maintaining order while striving to find a cure for Collapse
-            Syndrome
-          </p>
+    <nav class="navbar">
+      <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
+      <div class="sub">
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
+      </div>
+    </nav>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/scissors-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/fragrans/Fragrans.webp" alt="Michele" width="500" />
+      </div>
+      <div class="main-stuff">
+        <h1 class="title">FRAGRANS</h1>
+        <img class="emoji" src="/public/emojis/fragrans-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
         </div>
-        <div class="image-row">
-          <img src="public/bg/pus-icon-removebg-preview.png" alt="Gallery Image 1" data-set="1" class="gallery-image" />
-          <img
-            src="public/bg/scissors-icon-unclcikedremovebg-preview.png"
-            alt="Gallery Image 2"
-            data-set="2"
-            class="gallery-image"
-          />
-          <img
-            src="public/bg/urbino-symbol-unclicked-removebg-preview.png"
-            alt="Gallery Image 3"
-            data-set="3"
-            class="gallery-image"
-          />
+        <div>
+          <div id="about">
+            <h3>Role: Support</h3>
+            <p>
+              A floral expert and master perfumer, she is gentle, charming, and meticulous in life.
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/fragrans/Fragrans Active Skill.webp"
+                data-role="active-skill"
+                alt="eika ActiveSkill"
+              />
+              <img
+                src="/public/agents/fragrans/Fragrans Passive Skill.webp"
+                data-role="passive-skill"
+                alt="eika PassiveSkill"
+              />
+              <img
+                src="/public/agents/fragrans/Fragrans Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="eiks UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Aroma Surge</h3>
+                    <p>Type: Enchance</p>
+                    <p>
+                      Fragrans emits one of two perfumes, creating an aromatic field around her. Allies inside gain an increased
+                      rate of fire or movement speed. The effect fades over time.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Aroma Surge</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Charges: 3</li>
+                    <li>Duration: 12</li>
+                    <li>Max rate of fire bonus: 12.5%</li>
+                    <li>Max movement speed bonus: 12.5%</li>
+                    <li>Radius: 20</li>
+                    <li>Effectiveness is halved for Fragrans</li>
+                    <li>Ignores line of sight</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Aroma Surge</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/fragrans/Fragrans Active Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Elixir Aura</h3>
+                  <p>Type: Healing</p>
+                  <p>
+                    Fragrans releases a healing aroma to slowly restore HP to herself and nearby allies.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Elixir Aura</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Healing: 0 + 2/sec</li>
+                    <li>Radius: 20</li>
+                    <li>Ignores line of sight</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Elixir Aura</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/meredith/Meredith Passive Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Euphoric Aroma</h3>
+                  <p>Type: Enchance</p>
+                  <p>
+                    Fragrans releases a healing aroma to slowly restore HP to herself and nearby allies.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Euphoric Aroma</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Healing: 0 + 2/sec</li>
+                    <li>Radius: 20</li>
+                    <li>Ignores line of sight</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Euphoric Aroma</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/fragrans/Fragrans Ultimate Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Blossom</h3>
+            <img src="/public/agents/meredith/Meredith Gun Falcon.webp" />
+            <p>
+              Relentless firepower to dominate the battlefield, offering an excellent balance of accuracy and firing rate. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="Capacity.png" loading="lazy" />
+            <img src="/public/agents/fragrans/Fragrans Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/fragrans/Fragrans Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
         </div>
       </div>
     </div>
-    <script src="javascript-test.js"></script>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>

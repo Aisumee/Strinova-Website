@@ -6,103 +6,162 @@
     <title>Lawine | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Lawine">
-      <img src="/public/agents/lawine/Lawine.webp" alt="Lawine" width="400" />
-      <h1>Lawine</h1>
-      <h3>Role: Vanguard</h3>
-      <h2>Background</h2>
-      <p>
-        A former P.U.S investigator who deflected so she can expose the Restoration Initiative. She buries her emotions
-        and leaves her past life behind. Yet, she still is haunted by the shadows of her former friends
-      </p>
-    </div>
-    <hr />
-    <div id="Lawine-Skills">
-      <h2>Skills</h2>
-      <div id="Lawine-ActiveSkill">
-        <h3>Active Skill: Pulse Blade</h3>
-        <img src/public/agents/lawine/="Lawine Active Skill.webp" alt="Lawine ActiveSkill" />
-        <p>Type: Detect</p>
-        <p>
-          Lawine throws a Pulse Blade that creates a electromagnetic field that scan and exposes all nearby enemies. The
-          Plse Blade will vanish upon failing to detect enemies in its vicinity or after 3 local scans.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cooldown: 30 Seconds</li>
-          <li>Revealed Duration: 3/5 when upgraded</li>
-          <li>Can be destroyed</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop><source src/public/agents/lawine/="Lawine Active Skill.mp4" /></video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/scissors-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/lawine/Lawine.webp" alt="Michele" width="500" />
       </div>
-      <div id="Lawine-PassiveSkill">
-        <h3>Passive Skill: Shadow Reveal</h3>
-        <img src/public/agents/lawine/="Lawine Passive Skill.webp" alt="Lawine PassiveSkill" />
-        <p>Type: Detect</p>
-        <p>Any enemies hit by lawine primary gun gets exposed to her</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Revealed Duration: 3/5 when upgraded</li>
-          <li></li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src/public/agents/lawine/="Lawine Passive Skill.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">LAWINE</h1>
+        <img class="emoji" src="/public/emojis/lawine-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Vanguard</h3>
+            <p>
+              A former P.U.S investigator who deflected so she can expose the Restoration Initiative. She buries her emotions
+              and leaves her past life behind. Yet, she still is haunted by the shadows of her former friends
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/lawine/Lawine Active Skill.webp"
+                data-role="active-skill"
+                alt="kanami ActiveSkill"
+              />
+              <img
+                src="/public/agents/lawine/Lawine Passive Skill.webp"
+                data-role="passive-skill"
+                alt="kanami PassiveSkill"
+              />
+              <img
+                src="/public/agents/lawine/Lawine Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="kanami UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Pulse Blade</h3>
+                    <p>Type: Detect</p>
+                    <p>
+                      Lawine throws a Pulse Blade that creates a electromagnetic field that scan and exposes all nearby enemies. The
+                      Plse Blade will vanish upon failing to detect enemies in its vicinity or after 3 local scans.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Pulse Blade</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cooldown: 30 Seconds</li>
+                    <li>Revealed Duration: 3/5 when upgraded</li>
+                    <li>Can be destroyed</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Pulse Blade</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/lawine/Lawine Active Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Shadow Reveal</h3>
+                  <p>Type: Detect</p>
+                  <p>
+                    Any enemies hit by lawine primary gun gets exposed to her
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Shadow Reveal</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Revealed Duration: 3/5 when upgraded</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Shadow Reveal</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/lawine/Lawine Passive Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Stealth Master</h3>
+                  <p>Type: Stealth</p>
+                  <p>
+                    Lawine creates a steath zone and becomes invisible upon entering it, but she cant fire in the zone. Any
+                    enemies that enter or exit the zone will be exposed to lawine
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Stealth Master</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 6 Ultimate Point</li>
+                    <li>Duration: 30 Seconds</li>
+                    <li>Revealed Duration: 30 Seconds</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Stealth Master</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/lawine/Lawine Ultimate Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Shadow Assault</h3>
+            <img src="/public/agents/lawine/Lawine Gun Shadow Assault.webp" />
+            <p>
+              Short assault rifle with high stability and outstanding accuracy. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="Capacity.png" loading="lazy" />
+            <img src="/public/agents/lawine/Lawine Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/lawine/Lawine Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Lawine-UltimateSkill">
-        <h3>Ultimate Skill: Stealth Master</h3>
-        <img src/public/agents/lawine/="Lawine Ultimate Skill.webp" alt="Lawine UltimateSkill" />
-        <p>Type: Stealth</p>
-        <p>
-          Lawine creates a steath zone and becomes invisible upon entering it, but she cant fire in the zone. Any
-          enemies that enter or exit the zone will be exposed to lawine
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 6 Ultimate Point</li>
-          <li>Duration: 30 Seconds</li>
-          <li>Revealed Duration: 30 Seconds</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src/public/agents/lawine/="Lawine Ultimate Skill.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Lawine-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Shadow Assault</h3>
-      <img src/public/agents/lawine/="Lawine Gun Shadow Assault.webp" />
-      <p></p>
-    </div>
-    <div id="Lawine-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="Capacity.png" loading="lazy" />
-      <img src/public/agents/lawine/="Lawine Active Upgrade.png" loading="lazy" /> <img
-      src/public/agents/lawine/="Lawine Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
-</html>
+</html> 

@@ -6,101 +6,164 @@
     <title>Celestia | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Celestia">
-      <img src="/public/agents/celestia/Celestia.webp" alt="Celestia" width="400" />
-      <h1>Celestia</h1>
-      <h3>Role: Support</h3>
-      <h2>Background</h2>
-      <p>
-        Oringinally wokring for the P.U.S, she leaves after the appearence of the Collapse Syndrome. she founded Astral
-        Sanctuary to heal those affected by the disease, and is being funded by urbino to help with her research
-      </p>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/urbino-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/celestia/Celestia.webp" alt="Michele" width="500" />
+      </div>
+      <div class="main-stuff">
+        <h1 class="title">CELESTIA</h1>
+        <img class="emoji" src="/public/emojis/celestia-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Support</h3>
+            <p>
+              Oringinally wokring for the P.U.S, she leaves after the appearence of the Collapse Syndrome. she founded Astral
+              Sanctuary to heal those affected by the disease, and is being funded by urbino to help with her research
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/celestia/Celestia Active Skill.webp"
+                data-role="active-skill"
+                alt="celestia ActiveSkill"
+              />
+              <img
+                src="/public/agents/celestia/Celestia Passive Skill.webp"
+                data-role="passive-skill"
+                alt="celestia PassiveSkill"
+              />
+              <img
+                src="/public/agents/celestia/Celestia Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="celestia UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Guardian Star</h3>
+                    <p>Type: Armor</p>
+                    <p>
+                      Celestia targets an allied character with a String Meteor, granting them temporary armor. The Meteor will then
+                      return to Celestia and grant her temporary armor.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Guardian Star</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Effect can stack</li>
+                    <li>Cooldown: 25</li>
+                    <li>Bonus temporary armor: 30(target) + 20(self). Capped at 100 shield</li>
+                    <li>Loses armor at a rate of ⛊3/sec</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Guardian Star</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/celestia/Celestia Active Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Cosmic Recovery</h3>
+                  <p>Type: Healing</p>
+                  <p>
+                    Celestia gradually heals her armor and nearby allied characters armor
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Cosmic Recovery</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Aura radius: 15</li>
+                    <li>Ignores line of sight</li>
+                    <li>Healing: ⛊2/sec</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Cosmic Recovery</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/celestia/Celestia Passive Skill Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Astral Gate</h3>
+                  <p>Type: Teleport/Buff</p>
+                  <p>
+                    Celestia boosts her and an ally's armor while charging an instant teleport to their location.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Astral Gate</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Teleportation can be canceled by tapping ultimate while charging (without affecting the armor boost)</li>
+                    <li>Cost: 7 Ultimate Points</li>
+                    <li>Temporary armor: 100(target) + 100(self)</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Astral Gate</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/celestia/Celestia Ultimate Skill Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Polaris</h3>
+            <img src="/public/agents/celestia/Celestia Gun Polaris.webp" />
+            <p>
+              Excellent heat dissipation and durability. Top accuracy for close-range shots, a smooth trigger pull, and ambidextrous design for comfort. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/shared/Capacity.png" loading="lazy" />
+            <img src="/public/agents/celestia/Celestia Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/celestia/Celestia Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <hr />
-    <div id="Celestia-Skills">
-      <h2>Skills</h2>
-      <div id="Celestia-ActiveSkill">
-        <h3>Active Skill: Guardian Star</h3>
-        <img src="/public/agents/celestia/Celestia Active Skill.webp" alt="Celestia ActiveSkill" />
-        <p>Type: Armor</p>
-        <p>
-          Celestia targets an allied character with a String Meteor, granting them temporary armor. The Meteor will then
-          return to Celestia and grant her temporary armor.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Effect can stack</li>
-          <li>Cooldown: 25</li>
-          <li>Bonus temporary armor: 30(target) + 20(self). Capped at 100 shield</li>
-          <li>Loses armor at a rate of ⛊3/sec</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/celestia/Celestia Active Vid.mp4" />
-        </video>
-      </div>
-      <div id="Celestia-PassiveSkill">
-        <h3>Passive Skill: Cosmic Recovery</h3>
-        <img src="/public/agents/celestia/Celestia Passive Skill.webp" alt="Celestia PassiveSkill" />
-        <p>Type: Healing</p>
-        <p>Celestia gradually heals her armor and nearby allied characters armor</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Aura radius: 15</li>
-          <li>Ignores line of sight</li>
-          <li>Healing: ⛊2/sec</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/celestia/Celestia Passive Skill Vid.mp4" />
-        </video>
-      </div>
-      <div id="Celestia-UltimateSkill">
-        <h3>Ultimate Skill: Astral Gate</h3>
-        <img src="/public/agents/celestia/Celestia Ultimate Skill.webp" alt="Celestia UltimateSkill" />
-        <p>Type: Teleport/Buff</p>
-        <p>Celestia boosts her and an ally's armor while charging an instant teleport to their location.</p>
-        <h4>Details</h4>
-        <ul>
-          <li>Teleportation can be canceled by tapping ultimate while charging (without affecting the armor boost)</li>
-          <li>Cost: 7 Ultimate Points</li>
-          <li>Temporary armor: 100(target) + 100(self)</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/celestia/Celestia Ultimate Skill Vid.mp4" />
-        </video>
-      </div>
-    </div>
-    <hr />
-    <div id="Celestia-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Polaris</h3>
-      <img src="/public/agents/celestia/Celestia Gun Polaris.webp" />
-      <p></p>
-    </div>
-    <div id="Celestia-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="Capacity.png" loading="lazy" />
-      <img src="/public/agents/celestia/Celestia Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/celestia/Celestia Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
+    <script src="../all-agent.js"></script>
   </body>
 </html>

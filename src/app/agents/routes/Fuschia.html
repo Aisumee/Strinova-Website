@@ -6,115 +6,172 @@
     <title>Fuschia | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Fuschia">
-      <img src="/public/agents/fuschia/fuschia.webp" alt="Fuschia" width="400" />
-      <h1>Fuschia</h1>
-      <h3>Role: Duelist</h3>
-      <h2>Background</h2>
-      <p>
-        A detached mercenary hired by Urbino. Beneath her calm exterior lies a fierce warrior. When deployed on
-        missions, she wears a special tactical mask that absorbs Bablo energy to enhance her physical abilities
-      </p>
-    </div>
-    <hr />
-    <div id="Fuschia-Skills">
-      <h2>Skills</h2>
-      <div id="Fuschia-ActiveSkill">
-        <h3>Active Skill: Apex Predator</h3>
-        <img src="/public/agents/fuschia/Fuschia Active Skill.webp" class="active skill.webp" alt="Fuschia ActiveSkill" />
-        <p>Type: Detect</p>
-        <p>
-          Description: Fuchsia exposes nearby enemies, visible only to her. Full HP enemies appear briefly, while those
-          under 100 HP remain visible for the skill's duration. Exposing enemies boosts her movement speed.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cooldown: 25 Seconds</li>
-          <li>Duration: 7 Seconds</li>
-          <li>Increased Movement Speed: 15</li>
-          <li>Reveal duration on enemies with 100 or more: 1.35</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src/public/agents/fuschia/="Fuschia Active Skill.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/urbino-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/fuschia/fuschia.webp" alt="Michele" width="500" />
       </div>
-      <div id="Fuschia-PassiveSkill">
-        <h3>Passive Skill: Hunter's Feast</h3>
-        <img src/public/agents/fuschia/="Fuschia Passive Skill.webp" alt="Fuschia PassiveSkill" />
-        <p>Type: Healing</p>
-        <p>
-          Enemies that are killed or assisted by Fuschia drops an energy crystal, which can absorb once she gets near
-          it. Once abosrbed she will restore hp, and get increased max hp the first time she abosrbs an energy crystal
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Absorb radius: 14</li>
-          <li>Bonus health: 30</li>
-          <li>Does not apply healing while Combat state</li>
-          <li>Base total healing: 75(+15/sec)</li>
-          <li>Total healing with upgrade: 100(+25/sec)</li>
-          <li>Healing rate: 5/sec</li>
-          <li>Does not reduce healing limit when health is already full</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src/public/agents/fuschia/="Fuschia Passive skill.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">FUSCHIA</h1>
+        <img class="emoji" src="/public/emojis/fuschia-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Duelist</h3>
+            <p>
+              A detached mercenary hired by Urbino. Beneath her calm exterior lies a fierce warrior. When deployed on
+              missions, she wears a special tactical mask that absorbs Bablo energy to enhance her physical abilities
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/fuschia/Fuschia Active Skill.webp"
+                data-role="active-skill"
+                alt="fuschia ActiveSkill"
+              />
+              <img
+                src="/public/agents/fuschia/Fuschia Passive Skill.webp"
+                data-role="passive-skill"
+                alt="fuschia PassiveSkill"
+              />
+              <img
+                src="/public/agents/fuschia/Fuschia Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="fuschia UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Apex Predator</h3>
+                    <p>Type: Detect</p>
+                    <p>
+                      Description: Fuchsia exposes nearby enemies, visible only to her. Full HP enemies appear briefly, while those
+                      under 100 HP remain visible for the skill's duration. Exposing enemies boosts her movement speed.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Apex Predator</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cooldown: 25 Seconds</li>
+                    <li>Duration: 7 Seconds</li>
+                    <li>Increased Movement Speed: 15</li>
+                    <li>Reveal duration on enemies with 100 or more: 1.35</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Apex Predator</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/fuschia/Fuschia Active Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Hunter's Feast</h3>
+                  <p>Type: Healing</p>
+                  <p>
+                    Enemies that are killed or assisted by Fuschia drops an energy crystal, which can absorb once she gets near
+                    it. Once abosrbed she will restore hp, and get increased max hp the first time she abosrbs an energy crystal
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Hunter's Feast</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Absorb radius: 14</li>
+                    <li>Bonus health: 30</li>
+                    <li>Does not apply healing while Combat state</li>
+                    <li>Base total healing: 75(+15/sec)</li>
+                    <li>Total healing with upgrade: 100(+25/sec)</li>
+                    <li>Healing rate: 5/sec</li>
+                    <li>Does not reduce healing limit when health is already full</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Hunter's Feast</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/fuschia/Fuschia Passive skill.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Bloodbath</h3>
+                  <p>Type: Teleport</p>
+                  <p>
+                    Fuchsia greatly increases her rate of fire, tech power, and enables her active skill to illuminate all enemies
+                    within the field of vision. Energy Crystals absorption extends this boost.
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Bloodbath</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 6 Ultimate Points</li>
+                    <li>increased firerate: 25</li>
+                    <li>Increased weapon usability: 25</li>
+                    <li>Bonus duration: 10(up to 5 times)</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Bloodbath</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/fuschia/Fuschia Ultimate Skill.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Sawtooth</h3>
+            <img src="/public/agents/fuschia/Fushcia Gun Sawtooth.webp" />
+            <p>
+              Balancing power and stability, this battle rifle is a fine example of Earth's industrial craftsmanship. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">  
+            <h2>Upgrades</h2>
+            <img src="/public/shared/Firing.png" loading="lazy" />
+            <img src="/public/shared/Accuracy.png" loading="lazy" />
+            <img src="/public/shared/Critical Hit.png" loading="lazy" />
+            <img src="/public/shared/Capacity.png" loading="lazy" />
+            <img src="/public/agents/fuschia/Fuschia Active Upgrade.png" loading="lazy" /> 
+            <img src="/public/agents/fuschia/Fuschia Passice Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Fuschia-UltimateSkill">
-        <h3>Ultimate Skill: Bloodbath</h3>
-        <img src/public/agents/fuschia/="Fuschia Ultimate Skill.webp" alt="Fuschia UltimateSkill" />
-        <p>Type: Enchance</p>
-        <p>
-          Fuchsia greatly increases her rate of fire, tech power, and enables her active skill to illuminate all enemies
-          within the field of vision. Energy Crystals absorption extends this boost.
-        </p>
-        <h4>Details</h4>
-        <ul>
-          <li>Cost: 6 Ultimate Points</li>
-          <li>increased firerate: 25</li>
-          <li>Increased weapon usability: 25</li>
-          <li>Bonus duration: 10(up to 5 times)</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="Flavia Ultimate Skill Vid.mp4" />
-        </video>
-      </div>
     </div>
-    <hr />
-    <div id="Fuschia-Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Sawtooth</h3>
-      <img src="Fushcia Gun Sawtooth.webp" />
-      <p></p>
-    </div>
-    <div id="Fuschia-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/shared/Firing.png" loading="lazy" />
-      <img src="/public/shared/Accuracy.png" loading="lazy" />
-      <img src="/public/shared/Critical Hit.png" loading="lazy" />
-      <img src="Capacity.png" loading="lazy" />
-      <img src/public/agents/fuschia/="Fuschia Active Upgrade.png" loading="lazy" /> <img
-      src/public/agents/fuschia/="Fuschia Passice Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>
+

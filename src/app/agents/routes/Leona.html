@@ -6,89 +6,158 @@
     <title>Leona | Strinova Fan Page</title>
     <link rel="icon" href="/public/facion.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/src/app/globals.css" />
+    <link rel="stylesheet" type="text/css" href="../pus-agent.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="main"><a href="/src/app/index.html">STRINOVA</a></div>
       <div class="sub">
-        <div><a href="/src/app/agents/page.html">Agents</a></div>
-        <div><a href="/src/app/maps/page.html">Maps</a></div>
-        <div><a href="/src/app/mechanics/page.html">Mechanics</a></div>
+        <a href="/src/app/agents/page.html">AGENTS</a>
+        <a href="/src/app/maps/page.html">MAPS</a>
+        <a href="/src/app/mechanics/page.html">MECHANICS</a>
       </div>
     </nav>
-    <div id="Leona-Description">
-      <img src="/public/agents/leona/Leona.webp" alt="Leona" width="400" />
-      <h1>Leona</h1>
-      <h3>Role: Senitinel</h3>
-      <h2>Background</h2>
-      <p>
-        A barrier specialist who excels in any setting. As the head of P.U.S Engineering, she demands high standards and
-        strict quality in construction.
-      </p>
-    </div>
-    <div id="Leona-Skills">
-      <h2>Skills</h2>
-      <div id="Leona-ActiveSkill">
-        <h3>Active Skill: Kinetic Barrier</h3>
-        <img src="/public/agents/leona/Leona Active Skill.webp" alt="Leona ActiveSkil" />
-        <p>Type: Cover</p>
-        <p>Leona generates square blocks with two-angled options on its designited surfaces.</p>
-        <p></p>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/leona/Leona acitve vid.mp4" />
-        </video>
+
+    <div class="agent">
+      <div class="agent-image-container">
+        <img class="agent-symbol" src="/public/bg/pus-symbol.png" width="500" />
+        <img class="agent-image" src="/public/agents/leona/Leona.webp" alt="Michele" width="500" />
       </div>
-      <div id="Leona-PassiveSkill">
-        <h3>Passive Skill: Work-Life Balance</h3>
-        <img src="/public/agents/leona/Leona Passive Skill.webp" alt="Leona PassiveSkill" />
-        <p>Type: Buff</p>
-        <p>
-          When in stringifield, Leona regenerates her energy. When her energy is above 50%, she gains movement speed.
-          When her energy is below 50%, her armor gradually regenerates
-        </p>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/leona/leona passive vid.mp4" />
-        </video>
+      <div class="main-stuff">
+        <h1 class="title">LEONA</h1>
+        <img class="emoji" src="/public/emojis/leona-emoji.webp">
+        <div class="subtitles">
+          <p data-role="about">ABOUT </p>
+          <p data-role="skills">SKILLS </p>
+          <p data-role="weapons">WEAPONS </p>
+          <p data-role="upgrades">UPGRADES </p>
+        </div>
+        <div>
+          <div id="about">
+            <h3>Role: Senitinel</h3>
+            <p>
+              A barrier specialist who excels in any setting. As the head of P.U.S Engineering, she demands high standards and
+              strict quality in construction
+            </p>
+          </div>
+          <div id="skills" class="skills">
+            <div class="skill-images">
+              <img
+                src="/public/agents/leona/Leona Active Skill.webp"
+                data-role="active-skill"
+                alt="leona ActiveSkill"
+              />
+              <img
+                src="/public/agents/leona/Leona Passive Skill.webp"
+                data-role="passive-skill"
+                alt="leona PassiveSkill"
+              />
+              <img
+                src="/public/agents/leona/Leona Ultimate Skill.webp"
+                data-role="ultimate-skill"
+                alt="leona UltimateSkill"
+              />
+            </div>
+            <div class="skill-title">
+              <p data-role="about">ABOUT</p>
+              <p data-role="details">DETAILS</p>
+              <p data-role="video">VIDEO</p>
+            </div>
+            <div>
+              <div id="active-skill">
+                <div id="about">
+                  <div class="active-about" data-role="about-skill">
+                    <h3 class="skill-name">Kinetic Barrier</h3>
+                    <p>Type: Cover</p>
+                    <p>
+                      Leona generates square blocks with two-angled options on its designited surfaces.
+                    </p>
+                  </div>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Kinetic Barrier</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>none haha</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Kinetic Barrier</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/leona/Leona acitve vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="passive-skill">
+                <div id="about">
+                  <h3 class="skill-name" >Work-Life Balance</h3>
+                  <p>Type: Buff</p>
+                  <p>
+                    When in stringifield, Leona regenerates her energy. When her energy is above 50%, she gains movement speed.
+                    When her energy is below 50%, her armor gradually regenerates
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name" >Work-Life Balance</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Pretty self explanatory</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name" >Work-Life Balance</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/leona/leona passive vid.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div id="ultimate-skill">
+                <div id="about">
+                  <h3 class="skill-name">Fortress of Purity</h3>
+                  <p>Type: Enchance</p>
+                  <p>
+                    While leona fills her energy bar, all blocks currently placed on the map and all blocks that gets placed after
+                    the ultimate is used becomes transparent. These transparent blocks no longer block paths or ally bullets
+                  </p>
+                </div>
+                <div id="details">
+                  <h3 class="skill-name">Fortress of Purity</h3>
+                  <h4>Details</h4>
+                  <ul>
+                    <li>Cost: 7 Ultimate Points</li>
+                  </ul>
+                </div>
+                <div id="video">
+                  <h3 class="skill-name">Fortress of Purity</h3>
+                  <video width="400" controls loop>
+                    <source src="/public/agents/leona/Leona Ultimate Vid.mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="weapons" data-role="weapon">
+            <h3>Primary Gun: Calibrator</h3>
+            <img src="/public/agents/nobunaga/Nobunaga Weapon.webp" />
+            <p>
+              Known for its remarkable power and performance, this general-purpose machine gun was a classic sweeper weapon from old Earth's large-scale wars. Equipped with a 1.25x scope.
+            </p>
+          </div>
+          <div id="upgrades" data-role="upgrades">
+            <h2>Upgrades</h2>
+            <img src="/public/agents/leona/Leona Firing.png" loading="lazy" />
+            <img src="/public/agents/leona/Leona Accuracy.png" loading="lazy" />
+            <img src="/public/agents/leona/Leona Critical Hit.png" loading="lazy" />
+            <img src="/public/agents/leona/Leona Capacity.png" loading="lazy" />
+            <img src="/public/agents/leona/Leona Active Upgrade.png" loading="lazy" />
+            <img src="/public/agents/leona/Leona Passive Upgrade.png" loading="lazy" />
+            <img src="/public/shared/Armor.png" loading="lazy" />
+            <img src="/public/shared/Stringify.png" loading="lazy" />
+          </div>
+        </div>
       </div>
-      <div id="Leona-UltimateSkill">
-        <h3>Ultimate Skill: Fortress of Purity</h3>
-        <img src="/public/agents/leona/Leona Ultimate Skill.webp" alt="Leona UltimateSkill" />
-        <p>Type: Enchance</p>
-        <p>
-          While leona fills her energy bar, all blocks currently placed on the map and all blocks that gets placed after
-          the ultimate is used becomes transparent. These transparent blocks no longer block paths or ally bullets
-        </p>
-        <ul>
-          <li>Cost: 7 Ultimate Points</li>
-        </ul>
-        <h4>How to play</h4>
-        <video width="400" controls autoplay loop>
-          <source src="/public/agents/leona/Leona Ultimate Vid.mp4" />
-        </video>
-      </div>
     </div>
-    <div id="Leona Weapon">
-      <h2>Weapon</h2>
-      <h3>Primary Gun: Calibrator</h3>
-      <img src="/public/agents/leona/Leona Weapon.webp" />
-    </div>
-    <div id="Leona-Upgrades">
-      <hr />
-      <h2>Upgrades</h2>
-      <img src="/public/agents/leona/Leona Firing.png" loading="lazy" />
-      <img src="/public/agents/leona/Leona Accuracy.png" loading="lazy" />
-      <img src="/public/agents/leona/Leona Critical Hit.png" loading="lazy" />
-      <img src="/public/agents/leona/Leona Capacity.png" loading="lazy" />
-      <img src="/public/agents/leona/Leona Active Upgrade.png" loading="lazy" />
-      <img src="/public/agents/leona/Leona Passive Upgrade.png" loading="lazy" />
-      <img src="/public/shared/Armor.png" loading="lazy" />
-      <img src="/public/shared/Stringify.png" loading="lazy" />
-    </div>
-    <footer>
-      <span>henryphanisthebest@gmail.com</span>
-      <span>©2025 - 2030IDS/KSH. ALL RIGHTS RESERVED.</span>
-    </footer>
+
+    <script src="../all-agent.js"></script>
   </body>
 </html>
